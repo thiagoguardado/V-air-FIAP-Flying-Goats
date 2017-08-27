@@ -10,7 +10,7 @@ public class InitialScene : MonoBehaviour {
 	public NetworkManager netManager;
 
 	void Awake(){
-		VRSettings.enabled = false;
+		VRSettings.enabled = false;;
 	}
 
 	public void LoadTotem(){

@@ -36,7 +36,22 @@ public class QRCodeReader : MonoBehaviour {
 		// calculate camera position
 		Vector2 cornerPos = new Vector2 (transform.position.x - panelRect.width / 2, Screen.height - (transform.position.y + panelRect.height / 2));
 		cameraRect = new Rect (cornerPos.x, cornerPos.y, panelRect.width, panelRect.height);
-		camTexture = new WebCamTexture ();
+		WebCamDevice[] devices = WebCamTexture.devices;
+
+		bool found = false;
+
+		for (int i = 0; i < devices.Length; i++) {
+			if (devices [i].isFrontFacing) {
+				camTexture = new WebCamTexture (devices [i].name);
+				found = true;
+				break;
+			}
+		}
+
+		if (!found) {
+			camTexture = new WebCamTexture ();
+		}
+
 		camTexture.requestedHeight = (int)panelRect.height;
 		camTexture.requestedWidth = (int)panelRect.width;
 		if (camTexture != null) {
@@ -75,7 +90,7 @@ public class QRCodeReader : MonoBehaviour {
 		int id;
 		if (!int.TryParse (result.Text, out id)) {
 			id = -1;
-			Debug.Log ("QR Code not a integer");
+			Debug.Log ("VAIR_ QR Code not a integer");
 		} else {
 
 			VRUser user;
