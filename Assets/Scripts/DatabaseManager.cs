@@ -20,6 +20,7 @@ public class DatabaseManager : MonoBehaviour {
 
 		// setup database
 		SetupDB ();
+
 	
 	}
 
@@ -74,6 +75,7 @@ public class DatabaseManager : MonoBehaviour {
 
 		}
 			
+
 
 		_dbc = (IDbConnection) new SqliteConnection(_constr);
 		_dbc.Open(); //Open connection to the database.
