@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 
 
@@ -19,14 +20,24 @@ public class TouchableSeat : MonoBehaviour {
 		}
 	}
 
+	public Sprite availableSprite;
+	public Sprite occupiedSprite;
+	public Sprite selectedSprite;
+
 	private SelectSeatControl selectControl;
 	private GameObject[] allSeats;
+	private Image image;
 
 
 	void Awake(){
 		//get reference
 		selectControl = (SelectSeatControl)GameObject.FindObjectOfType<SelectSeatControl> ();
 		allSeats = GameObject.FindGameObjectsWithTag("Seat");
+		image = GetComponent<Image> ();
+
+
+		ChangeImage ();
+
 	}
 
 
@@ -48,6 +59,7 @@ public class TouchableSeat : MonoBehaviour {
 			break;
 		}
 
+		ChangeAllImages ();
 
 	}
 
@@ -101,5 +113,39 @@ public class TouchableSeat : MonoBehaviour {
 				allSeats [i].GetComponent<TouchableSeat> ().Deselect ();
 			}
 		}
+	}
+
+
+	void ChangeAllImages(){
+		
+		for (int i = 0; i < allSeats.Length; i++) {
+
+			allSeats [i].GetComponent<TouchableSeat> ().ChangeImage ();
+
+		}
+	}
+
+
+	void ChangeImage(){
+
+		Sprite sprite;
+
+		switch (seatStatus) {
+		case SeatStatus.Available:
+			sprite = availableSprite;
+			break;
+		case SeatStatus.Occupied:
+			sprite = occupiedSprite;
+			break;
+		case SeatStatus.Selected:
+			sprite = selectedSprite;
+			break;
+		default:
+			sprite = availableSprite;
+			break;
+		}
+
+		image.sprite = sprite;
+
 	}
 }

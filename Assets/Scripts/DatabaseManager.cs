@@ -84,6 +84,14 @@ public class DatabaseManager : MonoBehaviour {
 
 	}
 
+	public bool SetupAndRead(int id, out VRUser user){
+	
+		SetupDB ();
+		bool read = ReadDB (id, out user);
+		CloseDB ();
+	
+		return read;
+	}
 
 	public bool ReadDB(int id, out VRUser user){
 
@@ -148,6 +156,13 @@ public class DatabaseManager : MonoBehaviour {
 //		_dbc.Close();
 //		_dbc = null;
 //	}
+
+	private void CloseDB(){
+		_dbcm.Dispose();
+		_dbcm = null;
+		_dbc.Close();
+		_dbc = null;
+	}
 
 }
 

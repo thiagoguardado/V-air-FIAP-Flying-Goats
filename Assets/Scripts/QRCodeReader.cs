@@ -36,6 +36,7 @@ public class QRCodeReader : MonoBehaviour {
 		// calculate camera position
 		Vector2 cornerPos = new Vector2 (transform.position.x - panelRect.width / 2, Screen.height - (transform.position.y + panelRect.height / 2));
 		cameraRect = new Rect (cornerPos.x, cornerPos.y, panelRect.width, panelRect.height);
+
 		WebCamDevice[] devices = WebCamTexture.devices;
 
 		bool found = false;

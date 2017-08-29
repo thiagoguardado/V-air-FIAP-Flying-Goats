@@ -629,11 +629,12 @@ PlayerSettings:
     daydream:
       daydreamIconForeground: {fileID: 0}
       daydreamIconBackground: {fileID: 0}
-  cloudServicesEnabled: {}
+  cloudServicesEnabled:
+    UNet: 1
   facebookSdkVersion: 7.9.1
   apiCompatibilityLevel: 2
-  cloudProjectId: 
-  projectName: 
-  organizationId: 
+  cloudProjectId: de92e3fa-2d39-463a-b5d8-6c9a7b92cde8
+  projectName: V-AiR
+  organizationId: flying-goats
   cloudEnabled: 0
   enableNewInputSystem: 0

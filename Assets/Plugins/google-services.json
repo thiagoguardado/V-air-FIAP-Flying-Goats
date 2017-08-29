@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "884968254844",
+    "firebase_url": "https://v-air-483b2.firebaseio.com",
+    "project_id": "v-air-483b2",
+    "storage_bucket": "v-air-483b2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:884968254844:android:ac7d200ef6551506",
+        "android_client_info": {
+          "package_name": "com.flyinggoats.vair"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "884968254844-c1h249cghglfggpl4iurp645ejgulecb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDjz1gioQ2X83rv5_PmQbtm037LhfnPXUk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

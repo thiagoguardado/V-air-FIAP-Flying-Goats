@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class SelectSeatControl : MonoBehaviour {
 
@@ -12,15 +13,22 @@ public class SelectSeatControl : MonoBehaviour {
 	public Text greetings;
 	public Button confirmButton;
 	public string selectedSeat = "";
+	public GameObject painelConfirmacao;
+	public Text textoPainelConfirmacao;
+	public Text poltronaPainelConfirmacao;
+	public Text timerConfirmacao;
+	public int timerDuration = 20;
 
 	void Awake () {
 
 		ped = new PointerEventData (null);
 
 		//initial setup
-		greetings.text = "Selecione sua poltrona, " + ApplicationControl.currentSelectingUser.name;
+		messageOutput.text = "Selecione sua poltrona, " + ApplicationControl.currentSelectingUser.name;
 		messageOutput.text = "";
 		confirmButton.enabled = false;
+		painelConfirmacao.SetActive (false);
+
 
 		//get all seats status
 
@@ -77,10 +85,52 @@ public class SelectSeatControl : MonoBehaviour {
 	public void ConfirmSeatSelection(){
 
 		// send message to VR application to start session
+		SendInfoToVR.FindDevice(selectedSeat,ApplicationControl.currentSelectingUser.id.ToString());
 
-
-		// display message
-		messageOutput.text = "Assento " + selectedSeat + " liberado!";
+		// display panel
+		StartConfirmation();
 
 	}
+
+
+	private void StartConfirmation(){
+	
+		// ativa painel
+		painelConfirmacao.SetActive (true);
+		textoPainelConfirmacao.text = ApplicationControl.currentSelectingUser.name + " dirija-se à poltrona:";
+		poltronaPainelConfirmacao.text = selectedSeat;
+
+		// ativa timer
+		StartCoroutine(Timer());
+
+		// manda dados para VRs
+
+
+	}
+
+
+	IEnumerator Timer(){
+
+		int timercont = timerDuration;
+
+		timerConfirmacao.text = timerDuration.ToString ();
+		
+		while (timercont >= 0) {
+
+			yield return new WaitForSeconds (1f);
+			timerConfirmacao.text = timercont.ToString ();
+			timercont -= 1;
+
+		}
+
+		BackToScan ();
+
+	}
+
+	public void BackToScan(){
+
+		ApplicationControl.BackToScanMenu ();
+
+	}
+
 }

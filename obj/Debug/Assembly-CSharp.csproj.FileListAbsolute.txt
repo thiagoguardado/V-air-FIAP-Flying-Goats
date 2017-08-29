@@ -33,3 +33,9 @@ C:\Users\thiag\Documents\Unity Projects Cloud\V-air\Temp\bin\Debug\Google.Protoc
 C:\Users\thiag\Documents\Unity Projects Cloud\V-air\Temp\bin\Debug\zxing.unity.dll
 C:\Users\thiag\Documents\Unity Projects Cloud\V-air\Temp\bin\Debug\Mono.Data.SqliteClient.dll
 C:\Users\thiag\Documents\Unity Projects Cloud\V-air\Temp\bin\Debug\System.Data.dll
+C:\Users\thiag\Documents\Unity Projects Cloud\V-air\Temp\bin\Debug\Ionic.Zlib.CF.dll
+C:\Users\thiag\Documents\Unity Projects Cloud\V-air\Temp\bin\Debug\Mono.Data.dll
+C:\Users\thiag\Documents\Unity Projects Cloud\V-air\Temp\bin\Debug\Mono.Data.Sqlite.dll
+C:\Users\thiag\Documents\Unity Projects Cloud\V-air\Temp\bin\Debug\System.EnterpriseServices.dll
+C:\Users\thiag\Documents\Unity Projects Cloud\V-air\Temp\bin\Debug\Unity.Compat.dll
+C:\Users\thiag\Documents\Unity Projects Cloud\V-air\Temp\bin\Debug\Unity.Tasks.dll

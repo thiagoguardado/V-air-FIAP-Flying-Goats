@@ -16,15 +16,14 @@ public class InitialScene : MonoBehaviour {
 	public void LoadTotem(){
 
 		NetworkManager.singleton.StartServer ();
-		SceneManager.LoadScene ("Totem_Scan");
+		SceneManager.LoadScene ("Totem_StartServer");
 	
 	}
 
 	public void LoadVR(){
 
-//		NetworkManager.singleton.StartClient ();
-		VRSettings.enabled = true;
-		SceneManager.LoadScene("VR_Intro");
+
+		SceneManager.LoadScene("VR_StartClient");
 	}
 
 

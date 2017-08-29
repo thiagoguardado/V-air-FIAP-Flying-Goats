@@ -31,5 +31,15 @@ public class ApplicationControl : MonoBehaviour {
 
 	}
 
+	private static void SetNullUser(){
+		currentSelectingUser = new VRUser(0,"null","null","null");
+	}
+
+	public static void BackToScanMenu(){
+
+		SetNullUser ();
+		SceneManager.LoadScene ("Totem_Scan");
+
+	}
 
 }
