@@ -8,6 +8,8 @@ using UnityEngine.UI;
 
 public class DatabaseManager : MonoBehaviour {
 
+	public static DatabaseManager instance = null;
+
 	private string _constr; 
 	private string usersTable = "USERS";
 	private string flightsTable = "FLIGHTS";
@@ -18,9 +20,16 @@ public class DatabaseManager : MonoBehaviour {
 
 	void Awake(){
 
+		// ensure singleton
+		if (instance == null) {
+			instance = this;
+		} else if (instance != this) {
+			Destroy (gameObject);
+		}
+		DontDestroyOnLoad (gameObject);
+
 		// setup database
 		SetupDB ();
-
 	
 	}
 
@@ -77,17 +86,16 @@ public class DatabaseManager : MonoBehaviour {
 			
 
 
-		_dbc = (IDbConnection) new SqliteConnection(_constr);
-		_dbc.Open(); //Open connection to the database.
-
-		Debug.Log ("VAIR_ Database Opened");
-
 	}
 
 	public bool SetupAndRead(int id, out VRUser user){
 	
-		SetupDB ();
+		// open database
+		OpenDB ();
+
 		bool read = ReadDB (id, out user);
+
+		// close database
 		CloseDB ();
 	
 		return read;
@@ -136,6 +144,8 @@ public class DatabaseManager : MonoBehaviour {
 
 		_dbr.Close ();
 		_dbr = null;
+		_dbcm.Dispose();
+		_dbcm = null;
 
 
 		return result;
@@ -149,19 +159,25 @@ public class DatabaseManager : MonoBehaviour {
 
 	}
 
-//	void OnDisable(){
-//		
-//		_dbcm.Dispose();
-//		_dbcm = null;
-//		_dbc.Close();
-//		_dbc = null;
-//	}
+	void OnDisable(){
+
+	}
+
+
+	void OpenDB ()
+	{
+		//Open connection to the database.
+		_dbc = (IDbConnection)new SqliteConnection (_constr);
+		_dbc.Open ();
+		Debug.Log ("VAIR_ Database Opened");
+	}
+
 
 	private void CloseDB(){
-		_dbcm.Dispose();
-		_dbcm = null;
+
 		_dbc.Close();
 		_dbc = null;
+		Debug.Log ("VAIR_ Database Closed");
 	}
 
 }

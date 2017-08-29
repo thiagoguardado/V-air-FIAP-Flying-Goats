@@ -7,7 +7,7 @@ public class IdleScreen : MonoBehaviour {
 
 	public void StartSession(){
 
-		SceneManager.LoadScene ("VR_Intro");
+		SceneManager.LoadScene ("VR_WaitingUser");
 
 	}
 

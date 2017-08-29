@@ -4,13 +4,14 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using UnityEngine.Networking;
+using UnityEngine.Networking.NetworkSystem;
 
 public class SelectSeatControl : MonoBehaviour {
 
 	public GraphicRaycaster raycaster;
 	private PointerEventData ped;
 	public Text messageOutput;
-	public Text greetings;
 	public Button confirmButton;
 	public string selectedSeat = "";
 	public GameObject painelConfirmacao;
@@ -18,6 +19,9 @@ public class SelectSeatControl : MonoBehaviour {
 	public Text poltronaPainelConfirmacao;
 	public Text timerConfirmacao;
 	public int timerDuration = 20;
+	public float refreshInterval;
+
+
 
 	void Awake () {
 
@@ -31,8 +35,8 @@ public class SelectSeatControl : MonoBehaviour {
 
 
 		//get all seats status
-
-
+		StartCoroutine (RefreshSeatStatus ());
+	
 
 	}
 	
@@ -87,6 +91,10 @@ public class SelectSeatControl : MonoBehaviour {
 		// send message to VR application to start session
 		SendInfoToVR.FindDevice(selectedSeat,ApplicationControl.currentSelectingUser.id.ToString());
 
+
+		// wait for device to send back a signal
+
+
 		// display panel
 		StartConfirmation();
 
@@ -103,11 +111,32 @@ public class SelectSeatControl : MonoBehaviour {
 		// ativa timer
 		StartCoroutine(Timer());
 
-		// manda dados para VRs
-
 
 	}
 
+	IEnumerator RefreshSeatStatus ()
+	{
+
+
+		TouchableSeat[] seats = FindObjectsOfType<TouchableSeat> ();
+		DeviceInfo[] devices = TotemManager.devices;
+		for (int i = 0; i < devices.Length; i++) {
+			for (int j = 0; j < seats.Length; j++) {
+				if (devices [i].deviceID == seats [j].seatName) {
+					if (!(devices [i].deviceStatus == DeviceStatus.idle)) {
+						seats [j].seatStatus = TouchableSeat.SeatStatus.Occupied;
+						break;
+					} 
+				}
+			}
+		}
+		seats [0].ChangeAllImages ();
+
+		yield return new WaitForSeconds (refreshInterval);
+
+		StartCoroutine (RefreshSeatStatus ());
+
+	}
 
 	IEnumerator Timer(){
 

@@ -7,7 +7,6 @@ using UnityEngine.VR;
 
 public class InitialScene : MonoBehaviour {
 
-	public NetworkManager netManager;
 
 	void Awake(){
 		VRSettings.enabled = false;;
@@ -15,7 +14,6 @@ public class InitialScene : MonoBehaviour {
 
 	public void LoadTotem(){
 
-		NetworkManager.singleton.StartServer ();
 		SceneManager.LoadScene ("Totem_StartServer");
 	
 	}

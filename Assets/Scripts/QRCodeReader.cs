@@ -15,27 +15,28 @@ public class QRCodeReader : MonoBehaviour {
 	private Rect panelRect;
 	private Rect cameraRect;
 	private bool isActive = true;
+	public Canvas canvas;
+	private float scale;
 
 	private DatabaseManager dbManager;
 
 	void Awake(){
 
 		// get reference
-		dbManager = GetComponent<DatabaseManager> ();
+		dbManager = FindObjectOfType<DatabaseManager> ();
 		panelRect = transform.GetComponent<RectTransform> ().rect;
+		scale = canvas.scaleFactor;
 
 		//start camera application
 		StartCamera ();
-
-
 	}
-
+		
 
 	private void StartCamera ()
 	{
 		// calculate camera position
-		Vector2 cornerPos = new Vector2 (transform.position.x - panelRect.width / 2, Screen.height - (transform.position.y + panelRect.height / 2));
-		cameraRect = new Rect (cornerPos.x, cornerPos.y, panelRect.width, panelRect.height);
+		Vector2 cornerPos = new Vector2 (transform.position.x - panelRect.width * scale / 2, Screen.height - (transform.position.y + panelRect.height * scale  / 2));
+		cameraRect = new Rect (cornerPos.x, cornerPos.y, panelRect.width * scale , panelRect.height * scale );
 
 		WebCamDevice[] devices = WebCamTexture.devices;
 
@@ -53,8 +54,8 @@ public class QRCodeReader : MonoBehaviour {
 			camTexture = new WebCamTexture ();
 		}
 
-		camTexture.requestedHeight = (int)panelRect.height;
-		camTexture.requestedWidth = (int)panelRect.width;
+		camTexture.requestedHeight = (int)(panelRect.height) ;
+		camTexture.requestedWidth = (int)(panelRect.width) ;
 		if (camTexture != null) {
 			camTexture.Play ();
 		}
@@ -95,8 +96,9 @@ public class QRCodeReader : MonoBehaviour {
 		} else {
 
 			VRUser user;
-			if (dbManager.ReadDB (id,out user)) {
+			if (dbManager.SetupAndRead (id,out user)) {
 				isActive = false;
+				camTexture.Stop ();
 				ApplicationControl.FoundUserOnDatabase (user);
 			}
 

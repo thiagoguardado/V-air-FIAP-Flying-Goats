@@ -21,7 +21,6 @@ GameObject:
   - component: {fileID: 4321160784094974}
   - component: {fileID: 114518344382873676}
   - component: {fileID: 114931009377559008}
-  - component: {fileID: 114157880925203478}
   m_Layer: 0
   m_Name: PlayerDevice
   m_TagString: PlayerDevice
@@ -78,17 +77,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &114157880925203478
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1066906628829442}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 90ca5daff25c1b14da30ded76c1ffb8c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &114518344382873676
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -202,7 +190,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05f18c72ed1a5a248a66d93a5b6807f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  outputtxt: {fileID: 114800063235019148}
 --- !u!222 &222738590651644320
 CanvasRenderer:
   m_ObjectHideFlags: 1

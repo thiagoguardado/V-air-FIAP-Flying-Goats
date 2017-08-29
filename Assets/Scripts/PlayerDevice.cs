@@ -39,43 +39,14 @@ public class PlayerDevice : MonoBehaviour {
 		
 
 	public static void SetNewID(string newID){
-
 		deviceID = newID;
-
 	}
+		
 
-
-	public static void RegisterHandler(){
-		MyNetworkManager.singleton.client.RegisterHandler (MyNetworkManager.commServerToClient, ReceiveNewUser);
-		MyNetworkManager.singleton.client.RegisterHandler (MyNetworkManager.commEvents, HandleEvents);
-	}
-
-
-
-	public static void ReceiveNewUser(NetworkMessage msg){
-	
-		if (deviceStatus == DeviceStatus.idle) {
-
-			string[] s_msg = msg.ReadMessage<StringMessage> ().value.Split ('_');
-
-			if (s_msg [0] == deviceID) {
-
-				FindUserOnDB (s_msg [1]);
-				SendBackConfirmationFoundUser ();
-				StartSession ();
-
-			} else {
-				// not this client requested
-			}
-
-		}
-
-	}
-
-
-	// this function hanldes events sent by server to clients
-	public static void HandleEvents(NetworkMessage msg) {
-
+	public static void FindUserAndStartSession(string userId){
+		FindUserOnDB (userId);
+		SendBackConfirmationFoundUser ();
+		StartSession ();
 	}
 
 
@@ -85,8 +56,14 @@ public class PlayerDevice : MonoBehaviour {
 		//find user on database
 		currentUserID = int.Parse (userID);
 		VRUser user;
-		instance.GetComponent<DatabaseManager> ().SetupAndRead (currentUserID, out user);
-		currentUser = user;
+		DatabaseManager dbManager = FindObjectOfType<DatabaseManager> ();
+		if (dbManager != null) {
+			dbManager.SetupAndRead (currentUserID, out user);
+			currentUser = user;
+		} else {
+			Debug.Log ("VAIR_ Could not find database manager");
+		}
+
 
 	}
 
@@ -94,7 +71,7 @@ public class PlayerDevice : MonoBehaviour {
 	{
 		// send confirmation back to server
 		StringMessage stms = new StringMessage ();
-		stms.value = deviceID + "_waitingUser";
+		stms.value = deviceID + "_" + DeviceStatus.waitingUser.ToString();
 		MyNetworkManager.singleton.client.Send (MyNetworkManager.commClientToServer, stms);
 	}
 

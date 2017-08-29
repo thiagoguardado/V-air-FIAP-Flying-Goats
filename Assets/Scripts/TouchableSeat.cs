@@ -116,7 +116,7 @@ public class TouchableSeat : MonoBehaviour {
 	}
 
 
-	void ChangeAllImages(){
+	public void ChangeAllImages(){
 		
 		for (int i = 0; i < allSeats.Length; i++) {
 

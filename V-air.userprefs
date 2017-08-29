@@ -1,41 +1,34 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj" RefactoringSettings.EnableRefactorings="True">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\PlayerDevice.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\MyNetworkManager.cs">
     <Files>
-      <File FileName="Assets\Scripts\SelectSeatControl.cs" Line="88" Column="26" />
+      <File FileName="Assets\Scripts\SelectSeatControl.cs" Line="94" Column="3" />
       <File FileName="Assets\VRStandardAssets\Scripts\VRTrackingReset.cs" Line="1" Column="1" />
       <File FileName="Assets\VRStandardAssets\Scripts\VRInteractiveItem.cs" Line="1" Column="1" />
-      <File FileName="Assets\VRSampleScenes\Scripts\Utils\SelectionSlider.cs" Line="1" Column="1" />
-      <File FileName="Assets\VRSampleScenes\Scripts\Utils\SelectionRadial.cs" Line="1" Column="1" />
-      <File FileName="Assets\VRSampleScenes\Scripts\Utils\ReturnToMainMenu.cs" Line="1" Column="1" />
-      <File FileName="Assets\VRSampleScenes\Scripts\Intro\IntroManager.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\TouchableSeat.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\ApplicationControl.cs" Line="37" Column="1" />
-      <File FileName="Assets\Scripts\QRCodeReader.cs" Line="38" Column="1" />
-      <File FileName="Assets\Scripts\DatabaseManager.cs" Line="80" Column="1" />
-      <File FileName="Assets\Scripts\InitialScene.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\TouchableSeat.cs" Line="119" Column="29" />
+      <File FileName="Assets\Scripts\ApplicationControl.cs" Line="22" Column="3" />
+      <File FileName="Assets\Scripts\QRCodeReader.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\DatabaseManager.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\InitialScene.cs" Line="9" Column="2" />
       <File FileName="Assets\TutorialInfo\Scripts\Editor\ReadmeEditor.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\active_user.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\requester.cs" Line="4" Column="17" />
+      <File FileName="Assets\Scripts\requester.cs" Line="1" Column="1" />
       <File FileName="Assets\src\Request.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\monitor.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\MyNetworkManager.cs" Line="23" Column="15" />
-      <File FileName="Assets\Scripts\StartClient.cs" Line="38" Column="53" />
-      <File FileName="Assets\Scripts\PlayerDevice.cs" Line="15" Column="1" />
-      <File FileName="Assets\Scripts\StartServer.cs" Line="19" Column="2" />
-      <File FileName="Assets\Scripts\SendInfoToVR.cs" Line="17" Column="1" />
-      <File FileName="Assets\sendall.cs" Line="17" Column="2" />
-      <File FileName="Assets\IdleScreen.cs" Line="10" Column="3" />
-      <File FileName="Assets\WaitingForUserScreen.cs" Line="12" Column="28" />
+      <File FileName="Assets\Scripts\MyNetworkManager.cs" Line="17" Column="1" />
+      <File FileName="Assets\Scripts\StartClient.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\PlayerDevice.cs" Line="52" Column="1" />
+      <File FileName="Assets\Scripts\StartServer.cs" Line="30" Column="1" />
+      <File FileName="Assets\Scripts\SendInfoToVR.cs" Line="1" Column="1" />
+      <File FileName="Assets\sendall.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\IdleScreen.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\ClientFunctions.cs" Line="66" Column="59" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
-      <Breakpoint file="C:\Users\thiag\Documents\Unity Projects Cloud\V-air\Assets\Scripts\PlayerDevice.cs" line="55" column="1" />
-      <Breakpoint file="C:\Users\thiag\Documents\Unity Projects Cloud\V-air\Assets\Scripts\PlayerDevice.cs" line="63" column="1" />
       <Breakpoint file="C:\Users\thiag\Documents\Unity Projects Cloud\V-air\Assets\Scripts\SendInfoToVR.cs" line="12" column="1" />
       <Breakpoint file="C:\Users\thiag\Documents\Unity Projects Cloud\V-air\Assets\Scripts\SendInfoToVR.cs" line="15" column="1" />
-      <Breakpoint file="C:\Users\thiag\Documents\Unity Projects Cloud\V-air\Assets\Scripts\PlayerDevice.cs" line="57" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
