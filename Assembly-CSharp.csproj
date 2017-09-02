@@ -242,7 +242,6 @@
      <Compile Include="Assets\VRStandardAssets\Scripts\VRInteractiveItem.cs" />
      <Compile Include="Assets\VRStandardAssets\Scripts\VRTrackingReset.cs" />
      <Compile Include="Assets\lib\JSON.cs" />
-     <Compile Include="Assets\sendall.cs" />
      <Compile Include="Assets\src\CookieJar.cs" />
      <Compile Include="Assets\src\DiskCache.cs" />
      <Compile Include="Assets\src\FormDataStream.cs" />
