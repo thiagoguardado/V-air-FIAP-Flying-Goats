@@ -27,7 +27,7 @@ public class ApplicationControl : MonoBehaviour {
 		currentSelectingUser = _user;
 	
 		// change to selection screen
-		SceneManager.LoadScene("Totem_ChooseYourSeat");
+		Initiate.FadeDefault("Totem_ChooseYourSeat");
 
 	}
 
@@ -38,7 +38,7 @@ public class ApplicationControl : MonoBehaviour {
 	public static void BackToScanMenu(){
 
 		SetNullUser ();
-		SceneManager.LoadScene ("Totem_Scan");
+		Initiate.FadeDefault("Totem_Scan");
 
 	}
 

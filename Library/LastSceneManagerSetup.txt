@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scripts/VRSampleScenes/Scenes/Flyer.unity
+- path: Assets/Scenes/VR/VR_360Video.unity
   isLoaded: 1
   isActive: 1

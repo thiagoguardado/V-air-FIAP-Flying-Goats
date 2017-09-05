@@ -37,7 +37,7 @@ public class StartClient : MonoBehaviour {
 		PlayerDevice.SetNewID(deviceID.text);
 		PlayerDevice.FindUserOnDB (demoUserID.ToString());
 
-		SceneManager.LoadScene ("VR_WaitingUser");
+		Initiate.FadeDefault ("VR_WaitingUser");
 
 	}
 

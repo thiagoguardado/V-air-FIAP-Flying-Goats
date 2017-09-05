@@ -22,7 +22,7 @@ public class TotemManager : MonoBehaviour {
 		DontDestroyOnLoad (gameObject);
 
 
-
+		CreateDevices ();
 
 	}
 

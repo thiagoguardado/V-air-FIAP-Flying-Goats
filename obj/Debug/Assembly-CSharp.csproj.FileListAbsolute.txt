@@ -39,3 +39,4 @@ C:\Users\thiag\Documents\Unity Projects Cloud\V-air\Temp\bin\Debug\Mono.Data.Sql
 C:\Users\thiag\Documents\Unity Projects Cloud\V-air\Temp\bin\Debug\System.EnterpriseServices.dll
 C:\Users\thiag\Documents\Unity Projects Cloud\V-air\Temp\bin\Debug\Unity.Compat.dll
 C:\Users\thiag\Documents\Unity Projects Cloud\V-air\Temp\bin\Debug\Unity.Tasks.dll
+C:\Users\thiag\Documents\Unity Projects Cloud\V-air\Temp\bin\Debug\Assembly-CSharp-firstpass.pdb

@@ -15,7 +15,7 @@ public class ClientFunctions : MonoBehaviour {
 
 		PlayerDevice.deviceStatus = DeviceStatus.idle;
 
-		SceneManager.LoadScene ("VR_Idle");
+		Initiate.FadeDefault ("VR_Idle");
 	}
 
 

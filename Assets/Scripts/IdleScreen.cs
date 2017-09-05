@@ -6,8 +6,8 @@ using UnityEngine.SceneManagement;
 public class IdleScreen : MonoBehaviour {
 
 	public void StartSession(){
-
-		SceneManager.LoadScene ("VR_WaitingUser");
+		
+		Initiate.FadeDefault ("VR_WaitingUser");
 
 	}
 

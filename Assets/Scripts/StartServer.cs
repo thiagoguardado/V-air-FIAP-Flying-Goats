@@ -31,7 +31,7 @@ public class StartServer : MonoBehaviour {
 		MyNetworkManager.singleton.networkPort = int.Parse(port.text);
 		MyNetworkManager.singleton.StartServer ();
 
-		SceneManager.LoadScene ("Totem_Scan");
+		Initiate.FadeDefault ("Totem_Scan");
 
 	}
 }

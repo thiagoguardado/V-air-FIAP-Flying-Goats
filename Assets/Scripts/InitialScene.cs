@@ -14,14 +14,13 @@ public class InitialScene : MonoBehaviour {
 
 	public void LoadTotem(){
 
-		SceneManager.LoadScene ("Totem_StartServer");
+		Initiate.FadeDefault ("Totem_StartServer");
 	
 	}
 
 	public void LoadVR(){
 
-
-		SceneManager.LoadScene("VR_StartClient");
+		Initiate.FadeDefault ("VR_StartClient");
 	}
 
 

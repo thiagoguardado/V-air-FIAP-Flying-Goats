@@ -1385,7 +1385,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   raycaster: {fileID: 1878679990}
   messageOutput: {fileID: 1236159617}
-  greetings: {fileID: 0}
   confirmButton: {fileID: 1935602776}
   selectedSeat: 
   painelConfirmacao: {fileID: 1602902851}
@@ -1393,6 +1392,8 @@ MonoBehaviour:
   poltronaPainelConfirmacao: {fileID: 1623145055}
   timerConfirmacao: {fileID: 1615584999}
   timerDuration: 20
+  refreshStatus: 0
+  refreshInterval: 1
 --- !u!114 &906911341
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1999,6 +2000,48 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1346316642}
+--- !u!1001 &1426400494
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4901403404843546, guid: acd7966b5f47b05408f721bf6794c8ab, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4901403404843546, guid: acd7966b5f47b05408f721bf6794c8ab, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4901403404843546, guid: acd7966b5f47b05408f721bf6794c8ab, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4901403404843546, guid: acd7966b5f47b05408f721bf6794c8ab, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4901403404843546, guid: acd7966b5f47b05408f721bf6794c8ab, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4901403404843546, guid: acd7966b5f47b05408f721bf6794c8ab, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4901403404843546, guid: acd7966b5f47b05408f721bf6794c8ab, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4901403404843546, guid: acd7966b5f47b05408f721bf6794c8ab, type: 2}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: acd7966b5f47b05408f721bf6794c8ab, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &1452448960
 GameObject:
   m_ObjectHideFlags: 0
@@ -2145,6 +2188,7 @@ GameObject:
   - component: {fileID: 1602902852}
   - component: {fileID: 1602902854}
   - component: {fileID: 1602902853}
+  - component: {fileID: 1602902855}
   m_Layer: 5
   m_Name: "Painel confirma\xE7\xE3o"
   m_TagString: Untagged
@@ -2206,6 +2250,23 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1602902851}
+--- !u!95 &1602902855
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1602902851}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: dfa8f798e8328614f8c9e14ef3743757, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1 &1615584997
 GameObject:
   m_ObjectHideFlags: 0

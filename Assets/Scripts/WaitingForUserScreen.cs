@@ -46,6 +46,6 @@ public class WaitingForUserScreen : MonoBehaviour {
 	void BackToIdle ()
 	{
 		PlayerDevice.EndSession ();
-		SceneManager.LoadScene ("VR_Idle");
+		Initiate.FadeDefault ("VR_Idle");
 	}
 }

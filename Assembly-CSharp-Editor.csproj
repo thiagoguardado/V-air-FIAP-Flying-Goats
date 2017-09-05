@@ -81,6 +81,7 @@
      <None Include="Assets\Plugins\Android\AndroidManifest.xml" />
      <None Include="Assets\Scripts\VRSampleScenes\Shaders\SeparableAlpha.shader" />
      <None Include="Assets\GoogleVR\Shaders\GvrControllerReticle.shader" />
+     <None Include="Assets\Plugins\SkyboxPanoramicShader-master\Skybox-PanoramicBeta.shader" />
      <None Include="Assets\Scripts\VRSampleScenes\Fonts\LICENSE.txt" />
      <None Include="Assets\Plugins\Android\Firebase\res\values\google-services.xml" />
      <None Include="Assets\GoogleVR\Plugins\Android\AndroidManifest-Daydream.xml" />
@@ -199,6 +200,8 @@
  </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{4A03D0E4-68A3-5EE9-3C77-10DF1B48C1E2}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
     <ProjectReference Include="Assembly-CSharp.csproj">
       <Project>{2D40872A-711E-C636-58A9-664684EE4414}</Project>      <Name>Assembly-CSharp</Name>    </ProjectReference>
   </ItemGroup>

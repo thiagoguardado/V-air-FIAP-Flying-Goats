@@ -19,7 +19,8 @@ public class SelectSeatControl : MonoBehaviour {
 	public Text poltronaPainelConfirmacao;
 	public Text timerConfirmacao;
 	public int timerDuration = 20;
-	public float refreshInterval;
+	public bool refreshStatus = false;
+	public float refreshInterval = 1;
 
 
 
@@ -35,7 +36,9 @@ public class SelectSeatControl : MonoBehaviour {
 
 
 		//get all seats status
-		StartCoroutine (RefreshSeatStatus ());
+		if (refreshStatus) {
+			StartCoroutine (RefreshSeatStatus ());
+		}
 	
 
 	}
@@ -130,6 +133,7 @@ public class SelectSeatControl : MonoBehaviour {
 				}
 			}
 		}
+
 		seats [0].ChangeAllImages ();
 
 		yield return new WaitForSeconds (refreshInterval);
