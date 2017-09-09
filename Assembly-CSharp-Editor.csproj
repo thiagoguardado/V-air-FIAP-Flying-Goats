@@ -6,7 +6,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{F9C73445-FD7B-D59A-A818-3F3965EC450C}</ProjectGuid>
+    <ProjectGuid>{37356942-F921-4238-E9D1-DF1C9DD5739D}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp-Editor</AssemblyName>
@@ -144,66 +144,78 @@
  <Reference Include="UnityEditor.Android.Extensions">
  <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll</HintPath>
  </Reference>
- <Reference Include="UnityEditor.WebGL.Extensions">
- <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll</HintPath>
+ <Reference Include="UnityEditor.iOS.Extensions">
+ <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.LinuxStandalone.Extensions">
+ <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.WindowsStandalone.Extensions">
  <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/windowsstandalonesupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
  </Reference>
+ <Reference Include="UnityEditor.OSXStandalone.Extensions">
+ <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll</HintPath>
+ </Reference>
  <Reference Include="Google.ProtocolBuffers">
- <HintPath>C:/Users/thiag/Documents/Unity Projects Cloud/V-air/Assets/GoogleVR/Plugins/Google.ProtocolBuffers.dll</HintPath>
+ <HintPath>C:/Users/Rodrigo Rebelatto/Desktop/repos/V-air-FIAP-Flying-Goats-master/Assets/GoogleVR/Plugins/Google.ProtocolBuffers.dll</HintPath>
  </Reference>
  <Reference Include="Ionic.Zlib.CF">
- <HintPath>C:/Users/thiag/Documents/Unity Projects Cloud/V-air/Assets/lib/Ionic.Zlib.CF.dll</HintPath>
+ <HintPath>C:/Users/Rodrigo Rebelatto/Desktop/repos/V-air-FIAP-Flying-Goats-master/Assets/lib/Ionic.Zlib.CF.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Compat">
- <HintPath>C:/Users/thiag/Documents/Unity Projects Cloud/V-air/Assets/Parse/Plugins/Unity.Compat.dll</HintPath>
+ <HintPath>C:/Users/Rodrigo Rebelatto/Desktop/repos/V-air-FIAP-Flying-Goats-master/Assets/Parse/Plugins/Unity.Compat.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Tasks">
- <HintPath>C:/Users/thiag/Documents/Unity Projects Cloud/V-air/Assets/Parse/Plugins/Unity.Tasks.dll</HintPath>
+ <HintPath>C:/Users/Rodrigo Rebelatto/Desktop/repos/V-air-FIAP-Flying-Goats-master/Assets/Parse/Plugins/Unity.Tasks.dll</HintPath>
  </Reference>
  <Reference Include="Google.IOSResolver_v1.2.45.0">
- <HintPath>C:/Users/thiag/Documents/Unity Projects Cloud/V-air/Assets/PlayServicesResolver/Editor/Google.IOSResolver_v1.2.45.0.dll</HintPath>
+ <HintPath>C:/Users/Rodrigo Rebelatto/Desktop/repos/V-air-FIAP-Flying-Goats-master/Assets/PlayServicesResolver/Editor/Google.IOSResolver_v1.2.45.0.dll</HintPath>
  </Reference>
  <Reference Include="Google.JarResolver_v1.2.45.0">
- <HintPath>C:/Users/thiag/Documents/Unity Projects Cloud/V-air/Assets/PlayServicesResolver/Editor/Google.JarResolver_v1.2.45.0.dll</HintPath>
+ <HintPath>C:/Users/Rodrigo Rebelatto/Desktop/repos/V-air-FIAP-Flying-Goats-master/Assets/PlayServicesResolver/Editor/Google.JarResolver_v1.2.45.0.dll</HintPath>
  </Reference>
  <Reference Include="Google.VersionHandler">
- <HintPath>C:/Users/thiag/Documents/Unity Projects Cloud/V-air/Assets/PlayServicesResolver/Editor/Google.VersionHandler.dll</HintPath>
+ <HintPath>C:/Users/Rodrigo Rebelatto/Desktop/repos/V-air-FIAP-Flying-Goats-master/Assets/PlayServicesResolver/Editor/Google.VersionHandler.dll</HintPath>
  </Reference>
  <Reference Include="Google.VersionHandlerImpl_v1.2.45.0">
- <HintPath>C:/Users/thiag/Documents/Unity Projects Cloud/V-air/Assets/PlayServicesResolver/Editor/Google.VersionHandlerImpl_v1.2.45.0.dll</HintPath>
+ <HintPath>C:/Users/Rodrigo Rebelatto/Desktop/repos/V-air-FIAP-Flying-Goats-master/Assets/PlayServicesResolver/Editor/Google.VersionHandlerImpl_v1.2.45.0.dll</HintPath>
  </Reference>
  <Reference Include="Mono.Data">
- <HintPath>C:/Users/thiag/Documents/Unity Projects Cloud/V-air/Assets/Plugins/Mono.Data.dll</HintPath>
+ <HintPath>C:/Users/Rodrigo Rebelatto/Desktop/repos/V-air-FIAP-Flying-Goats-master/Assets/Plugins/Mono.Data.dll</HintPath>
  </Reference>
  <Reference Include="Mono.Data.Sqlite">
- <HintPath>C:/Users/thiag/Documents/Unity Projects Cloud/V-air/Assets/Plugins/Mono.Data.Sqlite.dll</HintPath>
+ <HintPath>C:/Users/Rodrigo Rebelatto/Desktop/repos/V-air-FIAP-Flying-Goats-master/Assets/Plugins/Mono.Data.Sqlite.dll</HintPath>
  </Reference>
  <Reference Include="Mono.Data.SqliteClient">
- <HintPath>C:/Users/thiag/Documents/Unity Projects Cloud/V-air/Assets/Plugins/Mono.Data.SqliteClient.dll</HintPath>
+ <HintPath>C:/Users/Rodrigo Rebelatto/Desktop/repos/V-air-FIAP-Flying-Goats-master/Assets/Plugins/Mono.Data.SqliteClient.dll</HintPath>
  </Reference>
  <Reference Include="System.Configuration">
- <HintPath>C:/Users/thiag/Documents/Unity Projects Cloud/V-air/Assets/Plugins/System.Configuration.dll</HintPath>
+ <HintPath>C:/Users/Rodrigo Rebelatto/Desktop/repos/V-air-FIAP-Flying-Goats-master/Assets/Plugins/System.Configuration.dll</HintPath>
  </Reference>
  <Reference Include="System.Data">
- <HintPath>C:/Users/thiag/Documents/Unity Projects Cloud/V-air/Assets/Plugins/System.Data.dll</HintPath>
+ <HintPath>C:/Users/Rodrigo Rebelatto/Desktop/repos/V-air-FIAP-Flying-Goats-master/Assets/Plugins/System.Data.dll</HintPath>
  </Reference>
  <Reference Include="System.EnterpriseServices">
- <HintPath>C:/Users/thiag/Documents/Unity Projects Cloud/V-air/Assets/Plugins/System.EnterpriseServices.dll</HintPath>
+ <HintPath>C:/Users/Rodrigo Rebelatto/Desktop/repos/V-air-FIAP-Flying-Goats-master/Assets/Plugins/System.EnterpriseServices.dll</HintPath>
  </Reference>
  <Reference Include="System.Security">
- <HintPath>C:/Users/thiag/Documents/Unity Projects Cloud/V-air/Assets/Plugins/System.Security.dll</HintPath>
+ <HintPath>C:/Users/Rodrigo Rebelatto/Desktop/repos/V-air-FIAP-Flying-Goats-master/Assets/Plugins/System.Security.dll</HintPath>
  </Reference>
  <Reference Include="zxing.unity">
- <HintPath>C:/Users/thiag/Documents/Unity Projects Cloud/V-air/Assets/Plugins/zxing.unity.dll</HintPath>
+ <HintPath>C:/Users/Rodrigo Rebelatto/Desktop/repos/V-air-FIAP-Flying-Goats-master/Assets/Plugins/zxing.unity.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.iOS.Extensions.Xcode">
+ <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.iOS.Extensions.Common">
+ <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Common.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{4A03D0E4-68A3-5EE9-3C77-10DF1B48C1E2}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
+      <Project>{B35F7C05-D05A-D475-CCFF-5E77A5B1EF03}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
     <ProjectReference Include="Assembly-CSharp.csproj">
-      <Project>{2D40872A-711E-C636-58A9-664684EE4414}</Project>      <Name>Assembly-CSharp</Name>    </ProjectReference>
+      <Project>{70F60C5E-6284-C845-21A5-A0DFE4424156}</Project>      <Name>Assembly-CSharp</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

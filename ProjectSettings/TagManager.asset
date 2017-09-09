@@ -7,6 +7,10 @@ TagManager:
   - Seat
   - PlayerDevice
   - NetworkManager
+  - playable
+  - ring
+  - full-score
+  - warning
   layers:
   - Default
   - TransparentFX

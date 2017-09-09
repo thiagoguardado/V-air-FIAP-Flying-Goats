@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/VR/VR_360Video.unity
+- path: Assets/Scenes/VR/VR_Game.unity
   isLoaded: 1
   isActive: 1
