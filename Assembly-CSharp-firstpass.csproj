@@ -6,7 +6,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{4A03D0E4-68A3-5EE9-3C77-10DF1B48C1E2}</ProjectGuid>
+    <ProjectGuid>{13FADB28-7061-F111-161C-CA9AD54A53B4}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp-firstpass</AssemblyName>
@@ -50,26 +50,26 @@
      <Compile Include="Assets\Plugins\Fader\Initiate.cs" />
      <Compile Include="Assets\Plugins\SkyboxPanoramicShader-master\SkyboxPanoramicBetaShaderGUI.cs" />
      <None Include="Assets\GoogleVR\Shaders\GvrUIOverlayFont.shader" />
-     <None Include="Assets\Scripts\VRSampleScenes\Shaders\UnlitTransparentParam.shader" />
+     <None Include="Assets\VRSampleScenes\Shaders\UnlitTransparentParam.shader" />
      <None Include="Assets\Plugins\Android\Firebase\AndroidManifest.xml" />
      <None Include="Assets\GoogleVR\Shaders\GvrAdditiveOverlay.shader" />
      <None Include="Assets\Plugins\Android\Assets\OSIG_Readme.txt" />
-     <None Include="Assets\Scripts\VRSampleScenes\Shaders\UIOverlay.shader" />
+     <None Include="Assets\VRSampleScenes\Shaders\UIOverlay.shader" />
      <None Include="Assets\GoogleVR\Demos\Environment\DemoEnvUnlitGrayscale.shader" />
-     <None Include="Assets\Scripts\VRSampleScenes\Shaders\PriorityParticleAlpha.shader" />
+     <None Include="Assets\VRSampleScenes\Shaders\PriorityParticleAlpha.shader" />
      <None Include="Assets\GoogleVR\Shaders\GvrController.shader" />
      <None Include="Assets\PlayServicesResolver\Editor\play-services-resolver_v1.2.45.0.txt" />
      <None Include="Assets\GoogleVR\Shaders\GvrUnlitTransparentOverlay.shader" />
      <None Include="Assets\GoogleVR\Shaders\GvrUnlitTransparentOverlayColor.shader" />
-     <None Include="Assets\Scripts\VRSampleScenes\Shaders\SlidingUV.shader" />
+     <None Include="Assets\VRSampleScenes\Shaders\SlidingUV.shader" />
      <None Include="Assets\GoogleVR\Demos\Shaders\GVRDemo\GVRDemoAmbientOcclusion.shader" />
      <None Include="Assets\GoogleVR\Shaders\Video\VideoUnlitShader.shader" />
      <None Include="Assets\GoogleVR\Shaders\GvrUnlitTextureOverlay.shader" />
      <None Include="Assets\Plugins\Android\AndroidManifest.xml" />
-     <None Include="Assets\Scripts\VRSampleScenes\Shaders\SeparableAlpha.shader" />
+     <None Include="Assets\VRSampleScenes\Shaders\SeparableAlpha.shader" />
      <None Include="Assets\GoogleVR\Shaders\GvrControllerReticle.shader" />
      <None Include="Assets\Plugins\SkyboxPanoramicShader-master\Skybox-PanoramicBeta.shader" />
-     <None Include="Assets\Scripts\VRSampleScenes\Fonts\LICENSE.txt" />
+     <None Include="Assets\VRSampleScenes\Fonts\LICENSE.txt" />
      <None Include="Assets\Plugins\Android\Firebase\res\values\google-services.xml" />
      <None Include="Assets\GoogleVR\Plugins\Android\AndroidManifest-Daydream.xml" />
      <None Include="Assets\GoogleVR\Demos\Shaders\GVRDemo\GVRDemoUnlitGrayscaleToColor.shader" />
@@ -99,40 +99,46 @@
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityVR/RuntimeEditor/UnityEngine.VR.dll</HintPath>
  </Reference>
  <Reference Include="Google.ProtocolBuffers">
- <HintPath>C:/Users/thiag/Documents/Unity Projects Cloud/V-air/Assets/GoogleVR/Plugins/Google.ProtocolBuffers.dll</HintPath>
+ <HintPath>C:/Users/Thiago/Documents/Unity Projects Cloud/V-air-FIAP-Flying-Goats/Assets/GoogleVR/Plugins/Google.ProtocolBuffers.dll</HintPath>
  </Reference>
  <Reference Include="Ionic.Zlib.CF">
- <HintPath>C:/Users/thiag/Documents/Unity Projects Cloud/V-air/Assets/lib/Ionic.Zlib.CF.dll</HintPath>
+ <HintPath>C:/Users/Thiago/Documents/Unity Projects Cloud/V-air-FIAP-Flying-Goats/Assets/lib/Ionic.Zlib.CF.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Compat">
- <HintPath>C:/Users/thiag/Documents/Unity Projects Cloud/V-air/Assets/Parse/Plugins/Unity.Compat.dll</HintPath>
+ <HintPath>C:/Users/Thiago/Documents/Unity Projects Cloud/V-air-FIAP-Flying-Goats/Assets/Parse/Plugins/Unity.Compat.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Tasks">
- <HintPath>C:/Users/thiag/Documents/Unity Projects Cloud/V-air/Assets/Parse/Plugins/Unity.Tasks.dll</HintPath>
+ <HintPath>C:/Users/Thiago/Documents/Unity Projects Cloud/V-air-FIAP-Flying-Goats/Assets/Parse/Plugins/Unity.Tasks.dll</HintPath>
  </Reference>
  <Reference Include="Mono.Data">
- <HintPath>C:/Users/thiag/Documents/Unity Projects Cloud/V-air/Assets/Plugins/Mono.Data.dll</HintPath>
+ <HintPath>C:/Users/Thiago/Documents/Unity Projects Cloud/V-air-FIAP-Flying-Goats/Assets/Plugins/Mono.Data.dll</HintPath>
  </Reference>
  <Reference Include="Mono.Data.Sqlite">
- <HintPath>C:/Users/thiag/Documents/Unity Projects Cloud/V-air/Assets/Plugins/Mono.Data.Sqlite.dll</HintPath>
+ <HintPath>C:/Users/Thiago/Documents/Unity Projects Cloud/V-air-FIAP-Flying-Goats/Assets/Plugins/Mono.Data.Sqlite.dll</HintPath>
  </Reference>
  <Reference Include="Mono.Data.SqliteClient">
- <HintPath>C:/Users/thiag/Documents/Unity Projects Cloud/V-air/Assets/Plugins/Mono.Data.SqliteClient.dll</HintPath>
+ <HintPath>C:/Users/Thiago/Documents/Unity Projects Cloud/V-air-FIAP-Flying-Goats/Assets/Plugins/Mono.Data.SqliteClient.dll</HintPath>
  </Reference>
  <Reference Include="System.Configuration">
- <HintPath>C:/Users/thiag/Documents/Unity Projects Cloud/V-air/Assets/Plugins/System.Configuration.dll</HintPath>
+ <HintPath>C:/Users/Thiago/Documents/Unity Projects Cloud/V-air-FIAP-Flying-Goats/Assets/Plugins/System.Configuration.dll</HintPath>
  </Reference>
  <Reference Include="System.Data">
- <HintPath>C:/Users/thiag/Documents/Unity Projects Cloud/V-air/Assets/Plugins/System.Data.dll</HintPath>
+ <HintPath>C:/Users/Thiago/Documents/Unity Projects Cloud/V-air-FIAP-Flying-Goats/Assets/Plugins/System.Data.dll</HintPath>
  </Reference>
  <Reference Include="System.EnterpriseServices">
- <HintPath>C:/Users/thiag/Documents/Unity Projects Cloud/V-air/Assets/Plugins/System.EnterpriseServices.dll</HintPath>
+ <HintPath>C:/Users/Thiago/Documents/Unity Projects Cloud/V-air-FIAP-Flying-Goats/Assets/Plugins/System.EnterpriseServices.dll</HintPath>
  </Reference>
  <Reference Include="System.Security">
- <HintPath>C:/Users/thiag/Documents/Unity Projects Cloud/V-air/Assets/Plugins/System.Security.dll</HintPath>
+ <HintPath>C:/Users/Thiago/Documents/Unity Projects Cloud/V-air-FIAP-Flying-Goats/Assets/Plugins/System.Security.dll</HintPath>
  </Reference>
  <Reference Include="zxing.unity">
- <HintPath>C:/Users/thiag/Documents/Unity Projects Cloud/V-air/Assets/Plugins/zxing.unity.dll</HintPath>
+ <HintPath>C:/Users/Thiago/Documents/Unity Projects Cloud/V-air-FIAP-Flying-Goats/Assets/Plugins/zxing.unity.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.iOS.Extensions.Xcode">
+ <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.iOS.Extensions.Common">
+ <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Common.dll</HintPath>
  </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

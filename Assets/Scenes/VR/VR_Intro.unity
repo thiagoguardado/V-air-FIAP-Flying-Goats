@@ -206,8 +206,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "<b>LOOK AT</b> INTERACTABLES, <b>HOLD FIRE*</b> TO SELECT\r\nLet\u2019s
-    practice! Select the button below"
+  m_Text: "<b>OLHE</b> para MIRAR\n<b>PRESSIONE O BOT\xC3O DE A\xC7\xC3O*</b>para
+    SELECIONAR\r\n\nVamos praticar! Selecione o bot\xE3o abaixo"
 --- !u!222 &84724689
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -462,6 +462,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 114063829130735768, guid: 5ca80f4596fa44b87912a0592346d260,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5ca80f4596fa44b87912a0592346d260, type: 2}
   m_IsPrefabParent: 0
@@ -528,7 +533,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 498412, guid: 970dd4b9371394fb4890965f608d46fd, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 498412, guid: 970dd4b9371394fb4890965f608d46fd, type: 2}
       propertyPath: m_LocalRotation.x
@@ -549,6 +554,15 @@ Prefab:
     - target: {fileID: 498412, guid: 970dd4b9371394fb4890965f608d46fd, type: 2}
       propertyPath: m_RootOrder
       value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000013210091632, guid: 970dd4b9371394fb4890965f608d46fd,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 177758, guid: 970dd4b9371394fb4890965f608d46fd, type: 2}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 970dd4b9371394fb4890965f608d46fd, type: 2}
@@ -622,7 +636,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Look here!
+  m_Text: Olhe Aqui!
 --- !u!222 &513837554
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -847,7 +861,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: I'm ready
+  m_Text: Estou pronto!
 --- !u!222 &653153516
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1068,7 +1082,10 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "<b>PRESS BACK*</b> TO GO BACK\nLet\u2019s practice!"
+  m_Text: '<b>PRESSIONE VOLTAR*</b> PARA PAUSAR
+
+
+    Vamos praticar!'
 --- !u!222 &756518353
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1479,36 +1496,17 @@ MonoBehaviour:
   m_TextComponent: {fileID: 1211322431}
   m_PlatformTextPairs:
   - m_Platform: 0
-    m_Text: 'Now you know how to interact with things!
-
-      Let''s try once more to be sure,
-
-      then you''re on your own...'
+    m_Text: "Agora voc\xEA j\xE1 sabe interagir!\nVamos tentar mais uma vez para ter
+      certeza\n\n\n(<b>SEGURE A\xC7\xC3O</b> para selecionar o bot\xE3o)"
   - m_Platform: 2
-    m_Text: 'Now you know how to interact with things!
-
-      Let''s try once more to be sure,
-
-      then you''re on your own...
-
-
-
-
-      (<b>HOLD CTRL</b> or the <b>LEFT
-
-      MOUSE BUTTON</b> to select the button)'
+    m_Text: "Agora voc\xEA j\xE1 sabe interagir!\nVamos tentar mais uma vez para ter
+      certeza\n\n\n(<b>SEGURE A\xC7\xC3O</b> para selecionar o bot\xE3o)"
   - m_Platform: 7
-    m_Text: 'Now you know how to interact with things!
-
-      Let''s try once more to be sure,
-
-      then you''re on your own...'
+    m_Text: "Agora voc\xEA j\xE1 sabe interagir!\nVamos tentar mais uma vez para ter
+      certeza\n\n\n(<b>SEGURE A\xC7\xC3O</b> para selecionar o bot\xE3o)"
   - m_Platform: 11
-    m_Text: 'Now you know how to interact with things!
-
-      Let''s try once more to be sure,
-
-      then you''re on your own...'
+    m_Text: "Agora voc\xEA j\xE1 sabe interagir!\nVamos tentar mais uma vez para ter
+      certeza\n\n\n(<b>SEGURE A\xC7\xC3O</b> para selecionar o bot\xE3o)"
 --- !u!1 &867218951
 GameObject:
   m_ObjectHideFlags: 0
@@ -1718,7 +1716,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: How to Use
+  m_Text: Como Usar
 --- !u!222 &1181094018
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1825,16 +1823,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 'Now you know how to interact with things!
-
-    Let''s try once more to be sure,
-
-    then you''re on your own...
-
-
-
-
-    (<b>HOLD FIRE</b> to select the button)'
+  m_Text: "Agora voc\xEA j\xE1 sabe interagir!\nVamos tentar mais uma vez para ter
+    certeza\n\n\n(<b>SEGURE A\xC7\xC3O</b> para selecionar o bot\xE3o)"
 --- !u!222 &1211322432
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2096,39 +2086,35 @@ MonoBehaviour:
   m_TextComponent: {fileID: 756518352}
   m_PlatformTextPairs:
   - m_Platform: 11
-    m_Text: 'TO RETURN TO THE MAIN MENU
+    m_Text: '<b>PRESSIONE VOLTAR*</b> PARA PAUSAR
 
-      <b>PRESS BACK*</b> AT ANY TIME
 
-      Let''s try it!
+      Vamos praticar!
 
 
       *<b>The GearVR BACK BUTTON</b>'
   - m_Platform: 2
-    m_Text: 'TO RETURN TO THE MAIN MENU
+    m_Text: '<b>PRESSIONE VOLTAR*</b> PARA PAUSAR
 
-      <b>PRESS BACK*</b> AT ANY TIME
 
-      Let''s try it!
+      Vamos praticar!
 
 
       *<b>The ESC key</b>'
   - m_Platform: 0
-    m_Text: 'TO RETURN TO THE MAIN MENU
+    m_Text: '<b>PRESSIONE VOLTAR*</b> PARA PAUSAR
 
-      <b>PRESS BACK*</b> AT ANY TIME
 
-      Let''s try it!
+      Vamos praticar!
 
 
 
       *<b>The ESC key</b>'
   - m_Platform: 7
-    m_Text: 'TO RETURN TO THE MAIN MENU
+    m_Text: '<b>PRESSIONE VOLTAR*</b> PARA PAUSAR
 
-      <b>PRESS BACK*</b> AT ANY TIME
 
-      Let''s try it!
+      Vamos praticar!
 
 
 
@@ -2202,7 +2188,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Well Done!
+  m_Text: Muito bem!
 --- !u!222 &1271789585
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2592,7 +2578,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0.6}
+  m_AnchoredPosition: {x: 0, y: -0.45}
   m_SizeDelta: {x: 50, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1528763238
@@ -2656,17 +2642,17 @@ MonoBehaviour:
   m_TextComponent: {fileID: 84724688}
   m_PlatformTextPairs:
   - m_Platform: 0
-    m_Text: "<b>LOOK AT</b> INTERACTABLES, <b>HOLD FIRE*</b> TO SELECT\r\nLet\u2019s
-      practice! Select the button below\n\n\n\n\n<b>*LEFT MOUSE BUTTON</b> OR <b>CTRL</b>"
+    m_Text: "<b>OLHE</b> para MIRAR\n<b>PRESSIONE O BOT\xC3O DE A\xC7\xC3O*</b>para
+      SELECIONAR\r\n\nVamos praticar! Selecione o bot\xE3o abaixo"
   - m_Platform: 2
-    m_Text: "<b>LOOK AT</b> INTERACTABLES, <b>HOLD FIRE*</b> TO SELECT\r\nLet\u2019s
-      practice! Select the button below\n\n\n\n\n<b>*LEFT MOUSE BUTTON</b> OR <b>CTRL</b>"
+    m_Text: "<b>OLHE</b> para MIRAR\n<b>PRESSIONE O BOT\xC3O DE A\xC7\xC3O*</b>para
+      SELECIONAR\r\n\nVamos praticar! Selecione o bot\xE3o abaixo"
   - m_Platform: 7
-    m_Text: "<b>LOOK AT</b> INTERACTABLES, <b>HOLD FIRE*</b> TO SELECT\r\nLet\u2019s
-      practice! Select the button below\n\n\n\n\n<b>*LEFT MOUSE BUTTON</b> OR <b>CTRL</b>"
+    m_Text: "<b>OLHE</b> para MIRAR\n<b>PRESSIONE O BOT\xC3O DE A\xC7\xC3O*</b>para
+      SELECIONAR\r\n\nVamos praticar! Selecione o bot\xE3o abaixo"
   - m_Platform: 11
-    m_Text: "<b>LOOK AT</b> INTERACTABLES, <b>HOLD FIRE*</b> TO SELECT\r\nLet\u2019s
-      practice! Select the button below\n\n\n\n\n<b>*The GearVR TOUCHPAD</b>"
+    m_Text: "<b>OLHE</b> para MIRAR\n<b>PRESSIONE O BOT\xC3O DE A\xC7\xC3O*</b>para
+      SELECIONAR\r\n\nVamos praticar! Selecione o bot\xE3o abaixo"
 --- !u!1 &1530708826
 GameObject:
   m_ObjectHideFlags: 0
@@ -2850,7 +2836,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Going Back
+  m_Text: Pausando
 --- !u!222 &1672152659
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3155,6 +3141,48 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1813455384}
   m_Mesh: {fileID: 4300006, guid: eb9a01d178a85eb41b99822b6acad79b, type: 3}
+--- !u!1001 &1820729844
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4614213933106576, guid: c7297f3d6e8e76349b4b6f8332e4009c, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4614213933106576, guid: c7297f3d6e8e76349b4b6f8332e4009c, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4614213933106576, guid: c7297f3d6e8e76349b4b6f8332e4009c, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4614213933106576, guid: c7297f3d6e8e76349b4b6f8332e4009c, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4614213933106576, guid: c7297f3d6e8e76349b4b6f8332e4009c, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4614213933106576, guid: c7297f3d6e8e76349b4b6f8332e4009c, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4614213933106576, guid: c7297f3d6e8e76349b4b6f8332e4009c, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4614213933106576, guid: c7297f3d6e8e76349b4b6f8332e4009c, type: 2}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: c7297f3d6e8e76349b4b6f8332e4009c, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &1903277235
 GameObject:
   m_ObjectHideFlags: 0

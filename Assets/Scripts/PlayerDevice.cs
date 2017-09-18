@@ -87,6 +87,7 @@ public class PlayerDevice : MonoBehaviour {
 		deviceStatus = DeviceStatus.idle;
 		currentUser = new VRUser (-1, "null", "null", "null");
 		currentUserID = -1;
+		Initiate.FadeDefault ("VR_Idle");
 
 
 	}
