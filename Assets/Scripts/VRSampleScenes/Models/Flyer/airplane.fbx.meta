@@ -1,15 +1,23 @@
 fileFormatVersion: 2
-guid: d605caad923b86b49a1c8c84b723114d
-timeCreated: 1504983586
+guid: 191c714830f230d4686280c9c41b8b98
+timeCreated: 1504810518
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
-    100000: //RootNode
-    400000: //RootNode
-    2300000: //RootNode
-    3300000: //RootNode
-    4300000: ring
+    100000: airplane
+    100002: //RootNode
+    100004: helix
+    400000: airplane
+    400002: //RootNode
+    400004: helix
+    2300000: airplane
+    2300002: helix
+    3300000: airplane
+    3300002: helix
+    4300000: helix
+    4300002: airplane
+    7400000: Take 001
     9500000: //RootNode
   materials:
     importMaterials: 1
