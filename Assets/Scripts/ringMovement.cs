@@ -8,6 +8,9 @@ public class ringMovement : MonoBehaviour {
 
 	void Update () {
 		transform.Translate (Vector3.back * Time.deltaTime * speed);
+		if (transform.position.z < 0f) {
+			Destroy (this.gameObject);
+		}
 	}
 
 }

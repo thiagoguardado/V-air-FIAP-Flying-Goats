@@ -6,13 +6,13 @@ public class ringInstantiator : MonoBehaviour {
 
 	public GameObject ring;
 	int[] range_x, range_y;
-	public float spawn_cooldown = 1f;
+	public float spawn_cooldown = 0f;
 
 
 	void Start () {
 		
-		range_x = new int[2] {-20, 20};
-		range_y = new int[2] {-20, 20};
+		range_x = new int[2] {-30, 30};
+		range_y = new int[2] {-15, 25};
 
 		StartCoroutine (Spawner ());
 
