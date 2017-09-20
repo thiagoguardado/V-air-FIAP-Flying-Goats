@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using UnityEngine.VR;
 
 public class StartClient : MonoBehaviour {
 
@@ -34,10 +35,12 @@ public class StartClient : MonoBehaviour {
 
 	public void StartDemo(){
 
+		VRSettings.enabled = false;
+
 		PlayerDevice.SetNewID(deviceID.text);
 		PlayerDevice.FindUserOnDB (demoUserID.ToString());
 
-		Initiate.FadeDefault ("VR_WaitingUser");
+		Initiate.FadeDefault ("VR_Intro");
 
 	}
 

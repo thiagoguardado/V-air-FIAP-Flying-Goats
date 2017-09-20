@@ -724,7 +724,7 @@ MonoBehaviour:
 --- !u!1 &407500724
 GameObject:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 1613844726988326, guid: 1ecbeb76101de874a84b3aae2b9590f6,
+  m_PrefabParentObject: {fileID: 1039236150046864, guid: 204eee8b8868c3646b18fe9c2ca5137b,
     type: 2}
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 5
@@ -743,7 +743,7 @@ GameObject:
 --- !u!114 &407500725
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114390716922222302, guid: 1ecbeb76101de874a84b3aae2b9590f6,
+  m_PrefabParentObject: {fileID: 114942010292448174, guid: 204eee8b8868c3646b18fe9c2ca5137b,
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 407500724}
@@ -755,7 +755,7 @@ MonoBehaviour:
 --- !u!82 &407500726
 AudioSource:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 82146696640104212, guid: 1ecbeb76101de874a84b3aae2b9590f6,
+  m_PrefabParentObject: {fileID: 82986081924316396, guid: 204eee8b8868c3646b18fe9c2ca5137b,
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 407500724}
@@ -836,7 +836,7 @@ AudioSource:
 --- !u!328 &407500727
 VideoPlayer:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 328820515931422208, guid: 1ecbeb76101de874a84b3aae2b9590f6,
+  m_PrefabParentObject: {fileID: 328290143989822228, guid: 204eee8b8868c3646b18fe9c2ca5137b,
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 407500724}
@@ -866,7 +866,7 @@ VideoPlayer:
 --- !u!4 &407500728
 Transform:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 4766605681122092, guid: 1ecbeb76101de874a84b3aae2b9590f6,
+  m_PrefabParentObject: {fileID: 4281274043089868, guid: 204eee8b8868c3646b18fe9c2ca5137b,
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 407500724}

@@ -4,11 +4,15 @@ using UnityEngine;
 using UnityEngine.Networking;
 using UnityEngine.Networking.NetworkSystem;
 using UnityEngine.SceneManagement;
+using UnityEngine.VR;
 
 public class ClientFunctions : MonoBehaviour {
 
 
 	public void ClientConnected(){
+
+		VRSettings.enabled = true;
+
 		PlayerDevice.SetNewID (GameObject.FindObjectOfType<StartClient> ().deviceID.text);
 
 		RegisterHandler ();

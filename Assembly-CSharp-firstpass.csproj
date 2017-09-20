@@ -48,7 +48,6 @@
   <ItemGroup>
      <Compile Include="Assets\Plugins\Fader\Fader.cs" />
      <Compile Include="Assets\Plugins\Fader\Initiate.cs" />
-     <Compile Include="Assets\Plugins\SkyboxPanoramicShader-master\SkyboxPanoramicBetaShaderGUI.cs" />
      <None Include="Assets\GoogleVR\Shaders\GvrUIOverlayFont.shader" />
      <None Include="Assets\VRSampleScenes\Shaders\UnlitTransparentParam.shader" />
      <None Include="Assets\Plugins\Android\Firebase\AndroidManifest.xml" />

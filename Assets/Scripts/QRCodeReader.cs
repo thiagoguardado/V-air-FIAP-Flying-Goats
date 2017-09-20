@@ -106,4 +106,11 @@ public class QRCodeReader : MonoBehaviour {
 
 
 	}
+
+	void OnDestroy(){
+
+		camTexture.Stop ();
+	
+	}
+
 }

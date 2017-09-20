@@ -7,7 +7,7 @@ public class IdleScreen : MonoBehaviour {
 
 	public void StartSession(){
 		
-		Initiate.FadeDefault ("VR_WaitingUser");
+		Initiate.FadeDefault ("VR_Intro");
 
 	}
 

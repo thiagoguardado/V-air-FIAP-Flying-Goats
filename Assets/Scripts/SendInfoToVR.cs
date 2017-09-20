@@ -16,5 +16,14 @@ public class SendInfoToVR : MonoBehaviour {
 
 	}
 
+	public static void PingAllDevices(){
+
+		StringMessage stms = new StringMessage ();
+		stms.value = "ping";
+
+		NetworkServer.SendToAll (MyNetworkManager.commEvents, stms);
+
+	}
+
 
 }

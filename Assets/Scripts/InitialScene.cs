@@ -9,7 +9,7 @@ public class InitialScene : MonoBehaviour {
 
 
 	void Awake(){
-		VRSettings.enabled = false;;
+		VRSettings.enabled = false;
 	}
 
 	public void LoadTotem(){

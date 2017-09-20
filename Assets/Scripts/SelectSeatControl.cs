@@ -120,6 +120,9 @@ public class SelectSeatControl : MonoBehaviour {
 	IEnumerator RefreshSeatStatus ()
 	{
 
+		SendInfoToVR.PingAllDevices ();
+
+		yield return new WaitForSeconds (refreshInterval);
 
 		TouchableSeat[] seats = FindObjectsOfType<TouchableSeat> ();
 		DeviceInfo[] devices = TotemManager.devices;
@@ -135,8 +138,6 @@ public class SelectSeatControl : MonoBehaviour {
 		}
 
 		seats [0].ChangeAllImages ();
-
-		yield return new WaitForSeconds (refreshInterval);
 
 		StartCoroutine (RefreshSeatStatus ());
 
