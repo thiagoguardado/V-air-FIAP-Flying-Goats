@@ -29,21 +29,33 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/VR/VR_Intro.unity
     guid: f0b40196f638aee4ab098c7c11f840e2
+  - enabled: 1
+    path: Assets/Scenes/VR/VR_MainMenu.unity
+    guid: 3959fdef1e02d4d4fb01414c7de44414
+  - enabled: 1
+    path: Assets/Scenes/VR/VR_360Video.unity
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Scenes/VR/VR_GamesMenu.unity
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Scenes/VR/VR_QuizesMenu.unity
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Scenes/VR/VR_ToursMenu.unity
+    guid: 00000000000000000000000000000000
   - enabled: 0
-    path: Assets/Scripts/VRSampleScenes/Scenes/Intro.unity
+    path: Assets/VRSampleScenes/Scenes/Intro.unity
     guid: 1c5fe2bf037ade84ca9ed9d97b0e1b97
   - enabled: 0
-    path: Assets/Scripts/VRSampleScenes/Scenes/MainMenu.unity
-    guid: 3959fdef1e02d4d4fb01414c7de44414
-  - enabled: 0
-    path: Assets/Scripts/VRSampleScenes/Scenes/Maze.unity
+    path: Assets/VRSampleScenes/Scenes/Maze.unity
     guid: 00d8d8904282de34ca5c4e676602d75f
   - enabled: 0
-    path: Assets/Scripts/VRSampleScenes/Scenes/Flyer.unity
+    path: Assets/VRSampleScenes/Scenes/Flyer.unity
     guid: 105cf9eb7fcb45844a1354966d06fcf1
   - enabled: 0
-    path: Assets/Scripts/VRSampleScenes/Scenes/Shooter360.unity
+    path: Assets/VRSampleScenes/Scenes/Shooter360.unity
     guid: 77d89b9deefb6a5438a228683e280537
   - enabled: 0
-    path: Assets/Scripts/VRSampleScenes/Scenes/Shooter180.unity
+    path: Assets/VRSampleScenes/Scenes/Shooter180.unity
     guid: b62ef4a8c87fa764bbfdb7d250ce1c08
