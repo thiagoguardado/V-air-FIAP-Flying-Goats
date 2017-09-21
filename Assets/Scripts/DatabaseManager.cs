@@ -106,15 +106,24 @@ public class DatabaseManager : MonoBehaviour {
 		string name;
 		string sex;
 		string flight;
+		string flightTime;
+		string locator;
 
 
 		// find name
-		name = SelectStringFromUserTable (id,usersTable,"NAME");
-		sex = SelectStringFromUserTable (id,usersTable,"SEX");
-		flight = SelectStringFromUserTable (id,usersTable,"FLIGHT");
+		name = SelectStringFromUserTable (id,"NAME");
+		sex = SelectStringFromUserTable (id,"SEX");
+		flight = SelectStringFromUserTable (id, "FLIGHT");
+		locator = SelectStringFromUserTable (id,"LOCATOR");
+
+		if (flight != "") {
+			flightTime = SelectStringFromFlightsTable (flight, "BOARDING_TIME");
+		} else {
+			flightTime = "";
+		}
 
 		if (name != "") {
-			user = new VRUser (id, name, sex, flight);
+			user = new VRUser (id, name, sex, flight, flightTime,locator);
 			Debug.Log ("VAIR_ Found info for id " + id + ". Name: " + user.name);
 			return true;
 		} else {
@@ -123,13 +132,13 @@ public class DatabaseManager : MonoBehaviour {
 		}
 
 	}
+		
 
-
-	private string SelectStringFromUserTable (int id, string table, string field)
+	private string SelectStringFromUserTable (int id, string field)
 	{
 
 		_dbcm = _dbc.CreateCommand ();
-		_dbcm.CommandText = "SELECT " + field + " FROM " + table + " WHERE ID=" + id;
+		_dbcm.CommandText = "SELECT " + field + " FROM " + usersTable + " WHERE ID=" + id;
 		_dbr = _dbcm.ExecuteReader ();
 
 		string result = "";
@@ -148,10 +157,42 @@ public class DatabaseManager : MonoBehaviour {
 		_dbcm = null;
 
 
+		Debug.Log ("Read on DB: " + result);
+
 		return result;
 
 
 	}
+
+
+	private string SelectStringFromFlightsTable (string id, string field)
+	{
+
+		_dbcm = _dbc.CreateCommand ();
+		_dbcm.CommandText = "SELECT " + field + " FROM " + flightsTable + " WHERE NUMBER='" + id + "'";
+		_dbr = _dbcm.ExecuteReader ();
+
+		string result = "";
+
+		while (_dbr.Read ()) {
+			string _field = _dbr.GetString (0);
+			if (_field != "0") {
+				result = _field;
+				break;
+			}
+		}
+
+		_dbr.Close ();
+		_dbr = null;
+		_dbcm.Dispose();
+		_dbcm = null;
+
+		Debug.Log ("Read on DB: " + result);
+		return result;
+
+
+	}
+
 
 	string ConvertPath(string path){
 
@@ -188,6 +229,8 @@ public class VRUser{
 	public string name;
 	public string sex;
 	public string flight;
+	public string flightTime;
+	public string locator;
 	public bool hasFlight{
 		get{ 
 			if (flight != "" && flight != null) {
@@ -199,12 +242,14 @@ public class VRUser{
 	}
 
 
-	public VRUser(int _id, string _name, string _sex, string _flight){
+	public VRUser(int _id, string _name, string _sex, string _flight, string _flightTime, string _locator){
 
 		id = _id;
 		name = _name;
 		sex = _sex;
 		flight = _flight;
+		flightTime = _flightTime;
+		locator = _locator;
 
 	}
 

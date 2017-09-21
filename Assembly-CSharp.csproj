@@ -179,9 +179,12 @@
      <Compile Include="Assets\Scripts\ServerFunctions.cs" />
      <Compile Include="Assets\Scripts\StartClient.cs" />
      <Compile Include="Assets\Scripts\StartServer.cs" />
+     <Compile Include="Assets\Scripts\TotemExtraFunctions.cs" />
      <Compile Include="Assets\Scripts\TotemManager.cs" />
      <Compile Include="Assets\Scripts\TouchableSeat.cs" />
+     <Compile Include="Assets\Scripts\UserConfirmation.cs" />
      <Compile Include="Assets\Scripts\VRControl.cs" />
+     <Compile Include="Assets\Scripts\VRWarnings.cs" />
      <Compile Include="Assets\Scripts\VideoPlayerControl.cs" />
      <Compile Include="Assets\Scripts\WaitingForUserScreen.cs" />
      <Compile Include="Assets\Scripts\WarningPanel.cs" />

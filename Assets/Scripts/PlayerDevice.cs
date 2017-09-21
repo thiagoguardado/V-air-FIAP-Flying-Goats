@@ -17,7 +17,7 @@ public class PlayerDevice : MonoBehaviour {
 	public static PlayerDevice instance = null;
 	public static string deviceID = "";
 	public static int currentUserID = -1;
-	public static VRUser currentUser = new VRUser (-1, "null", "null", "null");
+	public static VRUser currentUser = new VRUser (-1, "null", "null", "null","null","null");
 	public static DeviceStatus deviceStatus;
 
 
@@ -87,7 +87,7 @@ public class PlayerDevice : MonoBehaviour {
 	public static void EndSession(){
 
 		deviceStatus = DeviceStatus.idle;
-		currentUser = new VRUser (-1, "null", "null", "null");
+		currentUser = new VRUser (-1, "null", "null", "null","null","null");
 		currentUserID = -1;
 		Initiate.FadeDefault ("VR_Idle");
 

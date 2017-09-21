@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class ApplicationControl : MonoBehaviour {
 
 	public static ApplicationControl instance = null;
-	public static VRUser currentSelectingUser = new VRUser(0,"null","null","null");
+	public static VRUser currentSelectingUser = new VRUser(0,"null","null","null","null","null");
 
 	// Use this for initialization
 	void Awake () {
@@ -27,12 +27,12 @@ public class ApplicationControl : MonoBehaviour {
 		currentSelectingUser = _user;
 	
 		// change to selection screen
-		Initiate.FadeDefault("Totem_ChooseYourSeat");
+		Initiate.FadeDefault("Totem_Confirm");
 
 	}
 
 	private static void SetNullUser(){
-		currentSelectingUser = new VRUser(0,"null","null","null");
+		currentSelectingUser = new VRUser(0,"null","null","null","null","null");
 	}
 
 	public static void BackToScanMenu(){

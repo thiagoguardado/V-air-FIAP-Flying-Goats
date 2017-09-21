@@ -61,6 +61,27 @@ public class ClientFunctions : MonoBehaviour {
 
 		}
 
+		if (s_msg.Length >= 7) {
+
+
+			if (s_msg.Substring (0, 7) == "warning") {
+
+				if (PlayerDevice.deviceStatus == DeviceStatus.inSession) {
+
+					string device = s_msg.Split ('_') [1];
+
+					if (device == PlayerDevice.deviceID) {
+				
+						VRWarnings.VooEmbarcando ();
+
+					}
+
+				}
+
+			}
+		}
+
+
 	}
 
 	// after receiving ping, send back information on device status

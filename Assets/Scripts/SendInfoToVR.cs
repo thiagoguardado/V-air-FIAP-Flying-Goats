@@ -26,4 +26,15 @@ public class SendInfoToVR : MonoBehaviour {
 	}
 
 
+	public static void SendWarning(string deviceID) {
+
+		StringMessage stms = new StringMessage ();
+		stms.value = deviceID + "_warning";
+
+		NetworkServer.SendToAll (MyNetworkManager.commEvents, stms);
+
+
+
+	}
+
 }

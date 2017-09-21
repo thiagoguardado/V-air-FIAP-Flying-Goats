@@ -113,4 +113,10 @@ public class QRCodeReader : MonoBehaviour {
 	
 	}
 
+
+	public void LogoButton(){
+
+		Initiate.FadeDefault ("Totem_Extra");
+
+	}
 }

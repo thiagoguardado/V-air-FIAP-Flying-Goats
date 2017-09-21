@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
+using UnityEngine.EventSystems;
 
 
 public class VRControl : MonoBehaviour {
@@ -9,6 +11,8 @@ public class VRControl : MonoBehaviour {
 	public static VRControl instance = null;
 
 	public GameObject pausePanel;
+	public Button continuarBotao;
+
 	public GameObject warningPanel;
 	private bool isPaused = false;
 	private bool hasWarning = false;
@@ -45,7 +49,6 @@ public class VRControl : MonoBehaviour {
 
 	}
 
-
 	public static void SetWarning(string title_body_footer, AudioClip audioWarning, bool canResume, float waitingTimeIfNotResumable) {
 
 		string[] warning = title_body_footer.Split ('_');
@@ -79,20 +82,7 @@ public class VRControl : MonoBehaviour {
 				if (SceneManager.GetActiveScene ().name == pausableScenes [i]) {
 
 
-					if (hasWarning){
-						if (canResumeWarning) {
-							ResumeWarningPanel ();
-							return;
-						}
-					} else {
-						
-						if (!isPaused) {
-							OpenPausePanel ();
-						} else {
-							ResumePausePanel ();
-						}
-					}
-					return;
+					PauseAction ();
 
 
 				}
@@ -139,6 +129,7 @@ public class VRControl : MonoBehaviour {
 
 						if (SceneManager.GetActiveScene ().name == returnableScenes [i]) {
 
+
 							VRControl.BackToMenu ();
 							return;
 
@@ -155,9 +146,31 @@ public class VRControl : MonoBehaviour {
 
 	}
 
+	void PauseAction ()
+	{
+		if (hasWarning) {
+			if (canResumeWarning) {
+				ResumeWarningPanel ();
+				return;
+			}
+		}
+		else {
+			if (!isPaused) {
+				OpenPausePanel ();
+			}
+			else {
+				ResumePausePanel ();
+			}
+		}
+		return;
+	}
+
 
 	public static void BackToMenu(){
 	
+		instance.warningPanel.SetActive (false);
+		instance.pausePanel.SetActive (false);
+
 		Initiate.FadeDefault("VR_MainMenu");
 	
 	}
@@ -171,6 +184,8 @@ public class VRControl : MonoBehaviour {
 		// Open Pause Panel
 		pausePanel.SetActive(true);
 		isPaused = true;
+
+		EventSystem.current.SetSelectedGameObject (continuarBotao.gameObject); 
 
 	}
 
@@ -260,5 +275,27 @@ public class VRControl : MonoBehaviour {
 
 
 
+	public void BotaoContinuar(){
+	
+		PauseAction ();
+	
+	}
+
+
+
+	public void BotaoEncerrar(){
+	
+		pausePanel.SetActive (false);
+		warningPanel.SetActive (false);
+		PlayerDevice.EndSession();
+
+	}
+
+
+	public void BotaoMenu(){
+
+		BackToMenu ();
+
+	}
 
 }
