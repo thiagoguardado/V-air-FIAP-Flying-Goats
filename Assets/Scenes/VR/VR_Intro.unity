@@ -2016,18 +2016,6 @@ Prefab:
       propertyPath: m_VRInput
       value: 
       objectReference: {fileID: 1806677645}
-    - target: {fileID: 11420560, guid: ad9d8e2e1e1e6774bab6f142ed0c6f51, type: 2}
-      propertyPath: m_ShowDoubleTapWarnings
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11420560, guid: ad9d8e2e1e1e6774bab6f142ed0c6f51, type: 2}
-      propertyPath: m_ShowSingleTapWarnings
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11479828, guid: ad9d8e2e1e1e6774bab6f142ed0c6f51, type: 2}
-      propertyPath: m_Text
-      value: "Mantenha o bot\xE3o pressionado!"
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ad9d8e2e1e1e6774bab6f142ed0c6f51, type: 2}
   m_IsPrefabParent: 0

@@ -559,10 +559,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pausePanel: {fileID: 1298672655754486}
   warningPanel: {fileID: 1628109566598066}
+  returnableScenes:
+  - VR_GamesMenu
+  - VR_QuizesMenu
+  - VR_ToursMenu
   pausableScenes:
   - VR_360Video
   - VR_Game
   - VR_Quiz
+  lookingDownMaxAngle: 30
+  timeLookingDown: 2
 --- !u!114 &114942238378486258
 MonoBehaviour:
   m_ObjectHideFlags: 1

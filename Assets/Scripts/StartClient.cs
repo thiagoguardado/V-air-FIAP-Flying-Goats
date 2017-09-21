@@ -35,7 +35,7 @@ public class StartClient : MonoBehaviour {
 
 	public void StartDemo(){
 
-		VRSettings.enabled = false;
+		VRSettings.enabled = true;
 
 		PlayerDevice.SetNewID(deviceID.text);
 		PlayerDevice.FindUserOnDB (demoUserID.ToString());

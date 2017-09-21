@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 6fe6cc142ac80f548980a9ebb835628b
-timeCreated: 1505865633
+guid: 6beddf27038dd8948a64fedd50ec5900
+timeCreated: 1505949605
 licenseType: Free
 VideoClipImporter:
   serializedVersion: 2
@@ -12,11 +12,11 @@ VideoClipImporter:
   frameRange: 0
   startFrame: -1
   endFrame: -1
-  frameCount: 4245
-  frameRate: 29.970029830932617
+  frameCount: 1444
+  frameRate: 25
   colorSpace: 0
   deinterlace: 0
-  sourceFileSize: 67255903
+  sourceFileSize: 18100477
   encodeAlpha: 0
   sourceHasAlpha: 0
   flipVertical: 0
@@ -39,11 +39,11 @@ VideoClipImporter:
     encodedWidth: 1920
     encodedHeight: 1080
     encodedStartFrame: 0
-    encodedEndFrame: 4245
+    encodedEndFrame: 1444
     streamedResource:
       source: 
       offset: 0
-      size: 67255903
+      size: 18100477
   userData: 
   assetBundleName: 
   assetBundleVariant: 

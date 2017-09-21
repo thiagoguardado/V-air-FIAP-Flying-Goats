@@ -78,7 +78,9 @@ public class PlayerDevice : MonoBehaviour {
 	public static void StartSession ()
 	{
 		// start session
-		deviceStatus = DeviceStatus.waitingUser;
+//		deviceStatus = DeviceStatus.waitingUser;
+
+		deviceStatus = DeviceStatus.inSession;
 		GameObject.FindObjectOfType<IdleScreen> ().StartSession ();
 	}
 

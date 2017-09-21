@@ -11,8 +11,6 @@ public class ClientFunctions : MonoBehaviour {
 
 	public void ClientConnected(){
 
-		VRSettings.enabled = true;
-
 		PlayerDevice.SetNewID (GameObject.FindObjectOfType<StartClient> ().deviceID.text);
 
 		RegisterHandler ();
@@ -20,6 +18,8 @@ public class ClientFunctions : MonoBehaviour {
 		PlayerDevice.deviceStatus = DeviceStatus.idle;
 
 		Initiate.FadeDefault ("VR_Idle");
+
+		VRSettings.enabled = true;
 	}
 
 
@@ -65,6 +65,7 @@ public class ClientFunctions : MonoBehaviour {
 
 	// after receiving ping, send back information on device status
 	private static void ConfirmDeviceOnline(){
+		
 		// send confirmation back to server
 		StringMessage stms = new StringMessage ();
 		stms.value = PlayerDevice.deviceID + "_" + PlayerDevice.deviceStatus.ToString() ;
