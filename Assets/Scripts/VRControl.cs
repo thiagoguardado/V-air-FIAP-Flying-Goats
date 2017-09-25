@@ -183,6 +183,7 @@ public class VRControl : MonoBehaviour {
 
 		// Open Pause Panel
 		pausePanel.SetActive(true);
+		pausePanel.GetComponent<Animator> ().SetTrigger ("Open");
 		isPaused = true;
 
 		EventSystem.current.SetSelectedGameObject (continuarBotao.gameObject); 
@@ -231,7 +232,10 @@ public class VRControl : MonoBehaviour {
 			videoControl.PauseVideo ();
 		
 		// pause game
-
+		start_game startGame = FindObjectOfType<start_game> ();
+		if (startGame != null)
+			startGame.PauseGame ();
+		
 		// pause quiz
 
 	}
@@ -245,6 +249,11 @@ public class VRControl : MonoBehaviour {
 			videoControl.UnPauseVideo ();
 		
 		// resume game
+		// pause game
+		start_game startGame = FindObjectOfType<start_game> ();
+		if (startGame != null)
+			startGame.PauseGame ();
+
 
 		// resume quiz
 
@@ -287,6 +296,9 @@ public class VRControl : MonoBehaviour {
 	
 		pausePanel.SetActive (false);
 		warningPanel.SetActive (false);
+
+		Time.timeScale = 1;
+
 		PlayerDevice.EndSession();
 
 	}
@@ -294,6 +306,7 @@ public class VRControl : MonoBehaviour {
 
 	public void BotaoMenu(){
 
+		Time.timeScale = 1;
 		BackToMenu ();
 
 	}

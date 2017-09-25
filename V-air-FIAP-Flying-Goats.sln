@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "V-air-FIAP-Flying-Goats", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "V-air-FIAP-Flying-Goats", "Assembly-CSharp-Editor.csproj", "{F001C211-9935-6B88-33AE-E9FA2F90AB3B}"
 EndProject
+Project("{3B3717ED-BA96-ACF1-0B37-06040D41A1A2}") = "V-air-FIAP-Flying-Goats", "Assembly-UnityScript.unityproj", "{D0429C76-3341-8990-86CE-5F53D37D77CD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,6 +27,10 @@ Global
 		{F001C211-9935-6B88-33AE-E9FA2F90AB3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F001C211-9935-6B88-33AE-E9FA2F90AB3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F001C211-9935-6B88-33AE-E9FA2F90AB3B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D0429C76-3341-8990-86CE-5F53D37D77CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0429C76-3341-8990-86CE-5F53D37D77CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0429C76-3341-8990-86CE-5F53D37D77CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0429C76-3341-8990-86CE-5F53D37D77CD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

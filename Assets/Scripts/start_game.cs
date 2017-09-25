@@ -80,9 +80,9 @@ public class start_game : MonoBehaviour {
 			transform.Translate (Vector3.back * Time.deltaTime * speed);
 		}
 
-		if (Input.GetButtonDown("Fire1") && is_playing) {
-			PauseGame ();
-		}
+//		if (Input.GetButtonDown("Fire1") && is_playing) {
+//			PauseGame ();
+//		}
 
 		if (Input.GetButtonDown("Fire1") && paused || Input.GetButtonDown("Fire1") && in_lose_menu) {
 			checking = true;
@@ -132,7 +132,9 @@ public class start_game : MonoBehaviour {
 				}
 			} else if (hit.transform.tag == "exit" && Input.GetButton("Fire1")) {
 				if (time > 50) {
-					Application.LoadLevel ("VR_MainMenu");
+					checking = false;
+					Initiate.FadeDefault ("VR_MainMenu");
+//					Application.LoadLevel ("VR_MainMenu");
 				}
 			} else if (hit.transform.tag == "quit" && Input.GetButton("Fire1") && paused) {
 				if (time > 50) {
@@ -146,32 +148,34 @@ public class start_game : MonoBehaviour {
 		time = 0;
 	}
 
-	void PauseGame(){
-		if (hit.transform.tag == "pause_menu") {
+	public void PauseGame(){
+
+		if (paused) {
+//		if (hit.transform.tag == "pause_menu") {
 			Time.timeScale = 1;
 			audio_source.clip = chose;
 			audio_source.Play ();
 			plane.GetComponent<AudioSource> ().volume = 0.3f;
-			menu.GetComponent<MeshRenderer> ().enabled = false;
-			menu.GetComponent<MeshCollider> ().enabled = false;
-			menu.transform.GetChild(0).gameObject.GetComponent<MeshRenderer>().enabled = false;
-			menu.transform.GetChild(0).gameObject.GetComponent<MeshCollider>().enabled = false;
-			menu.transform.GetChild(1).gameObject.GetComponent<MeshRenderer>().enabled = false;
-			menu.transform.GetChild(1).gameObject.GetComponent<MeshCollider>().enabled = false;
-			menu.transform.GetChild(2).gameObject.GetComponent<Canvas>().enabled = false;
+//			menu.GetComponent<MeshRenderer> ().enabled = false;
+//			menu.GetComponent<MeshCollider> ().enabled = false;
+//			menu.transform.GetChild (0).gameObject.GetComponent<MeshRenderer> ().enabled = false;
+//			menu.transform.GetChild (0).gameObject.GetComponent<MeshCollider> ().enabled = false;
+//			menu.transform.GetChild (1).gameObject.GetComponent<MeshRenderer> ().enabled = false;
+//			menu.transform.GetChild (1).gameObject.GetComponent<MeshCollider> ().enabled = false;
+//			menu.transform.GetChild (2).gameObject.GetComponent<Canvas> ().enabled = false;
 			paused = false;
 		} else {
 			Time.timeScale = 0;
 			audio_source.clip = back;
 			audio_source.Play ();
-			menu.transform.GetChild(0).gameObject.GetComponent<MeshRenderer>().enabled = true;
-			menu.transform.GetChild(0).gameObject.GetComponent<MeshCollider>().enabled = true;
-			menu.transform.GetChild(1).gameObject.GetComponent<MeshRenderer>().enabled = true;
-			menu.transform.GetChild(1).gameObject.GetComponent<MeshCollider>().enabled = true;
-			menu.transform.GetChild(2).gameObject.GetComponent<Canvas>().enabled = true;
+//			menu.transform.GetChild(0).gameObject.GetComponent<MeshRenderer>().enabled = true;
+//			menu.transform.GetChild(0).gameObject.GetComponent<MeshCollider>().enabled = true;
+//			menu.transform.GetChild(1).gameObject.GetComponent<MeshRenderer>().enabled = true;
+//			menu.transform.GetChild(1).gameObject.GetComponent<MeshCollider>().enabled = true;
+//			menu.transform.GetChild(2).gameObject.GetComponent<Canvas>().enabled = true;
 			plane.GetComponent<AudioSource> ().volume = 0f;
-			menu.GetComponent<MeshRenderer> ().enabled = true;
-			menu.GetComponent<MeshCollider> ().enabled = true;
+//			menu.GetComponent<MeshRenderer> ().enabled = true;
+//			menu.GetComponent<MeshCollider> ().enabled = true;
 			paused = true;
 		}
 	}
