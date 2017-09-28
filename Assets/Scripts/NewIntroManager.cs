@@ -82,6 +82,8 @@ public class NewIntroManager : MonoBehaviour {
 
 		Initiate.FadeDefault ("VR_MainMenu");
 	
+		Debug.Break ();
+
 	}
 
 }

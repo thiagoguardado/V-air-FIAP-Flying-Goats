@@ -10,6 +10,8 @@ public class VRControl : MonoBehaviour {
 
 	public static VRControl instance = null;
 
+	public Canvas canvas;
+
 	public GameObject pausePanel;
 	public Button continuarBotao;
 
@@ -47,6 +49,9 @@ public class VRControl : MonoBehaviour {
 
 		LookingDown ();
 
+
+		AlignToCamera ();
+
 	}
 
 	public static void SetWarning(string title_body_footer, AudioClip audioWarning, bool canResume, float waitingTimeIfNotResumable) {
@@ -83,7 +88,7 @@ public class VRControl : MonoBehaviour {
 
 
 					PauseAction ();
-
+					return;
 
 				}
 			}
@@ -146,6 +151,11 @@ public class VRControl : MonoBehaviour {
 
 	}
 
+	void AlignToCamera ()
+	{
+		transform.rotation = Camera.main.transform.rotation;
+	}
+
 	void PauseAction ()
 	{
 		if (hasWarning) {
@@ -170,7 +180,6 @@ public class VRControl : MonoBehaviour {
 	
 		instance.warningPanel.SetActive (false);
 		instance.pausePanel.SetActive (false);
-
 		Initiate.FadeDefault("VR_MainMenu");
 	
 	}
@@ -178,6 +187,7 @@ public class VRControl : MonoBehaviour {
 
 	public void OpenPausePanel(){
 
+		canvas.worldCamera = Camera.current;
 
 		PauseScene ();
 
@@ -186,7 +196,7 @@ public class VRControl : MonoBehaviour {
 		pausePanel.GetComponent<Animator> ().SetTrigger ("Open");
 		isPaused = true;
 
-		EventSystem.current.SetSelectedGameObject (continuarBotao.gameObject); 
+		EventSystem.current.SetSelectedGameObject(continuarBotao.gameObject); 
 
 	}
 
@@ -204,6 +214,8 @@ public class VRControl : MonoBehaviour {
 
 
 	private void OpenWarningPanel(){
+
+		canvas.worldCamera = Camera.current;
 
 		PauseScene ();
 

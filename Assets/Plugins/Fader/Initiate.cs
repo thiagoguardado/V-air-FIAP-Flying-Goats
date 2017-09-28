@@ -8,7 +8,9 @@ public static class Initiate {
 	public static float damp = 2f;
 
 	public static void FadeDefault(string scene){
+
 		Fade (scene, fadeColor, damp);
+
 	}
 
 	public static void Fade (string scene, Color fadeColor, float damp){

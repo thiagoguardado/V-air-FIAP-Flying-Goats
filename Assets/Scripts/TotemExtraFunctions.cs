@@ -7,7 +7,6 @@ public class TotemExtraFunctions : MonoBehaviour {
 
 	public InputField device;
 
-
 	public void BackToScan(){
 
 		Initiate.FadeDefault ("Totem_Scan");
