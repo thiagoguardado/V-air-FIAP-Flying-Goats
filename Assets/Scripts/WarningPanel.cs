@@ -9,7 +9,7 @@ public class WarningPanel : MonoBehaviour {
 	public Text body;
 	public Text footer;
 
-	private AudioSource audioSource;
+	public AudioSource audioSource;
 
 
 	public void SetupText(string title, string body, string footer){
@@ -21,8 +21,8 @@ public class WarningPanel : MonoBehaviour {
 	}
 
 
-	public void PlayWarningAudio(AudioClip clip){
-		audioSource.PlayOneShot (clip);
+	public void PlayWarningAudio(){
+		audioSource.Play ();
 	}
 
 }

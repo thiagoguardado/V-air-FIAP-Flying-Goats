@@ -1511,7 +1511,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
   reverbZoneMixCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -3597,15 +3597,9 @@ Prefab:
       propertyPath: m_RootOrder
       value: 28
       objectReference: {fileID: 0}
-    - target: {fileID: 95055258147418616, guid: 971903d4b72f3a04aa7c776feaaab5ec,
-        type: 2}
-      propertyPath: m_UpdateMode
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 95663685884434120, guid: 971903d4b72f3a04aa7c776feaaab5ec,
-        type: 2}
-      propertyPath: m_UpdateMode
-      value: 2
+    - target: {fileID: 1298672655754486, guid: 971903d4b72f3a04aa7c776feaaab5ec, type: 2}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 971903d4b72f3a04aa7c776feaaab5ec, type: 2}
@@ -3802,13 +3796,13 @@ MonoBehaviour:
   chose: {fileID: 8300000, guid: 4159925c9a603444896cdc044a72bc65, type: 3}
   confirm: {fileID: 8300000, guid: 582c43c8b40b7d74e8ba086cb6feb348, type: 3}
   back: {fileID: 8300000, guid: a63ad5c18fab3b44cad9795a4008a8b1, type: 3}
-  play_selected: {fileID: 2800000, guid: 7ad6fb05f23cf7341bb916442be64f14, type: 3}
-  exit_selected: {fileID: 2800000, guid: e0c02e5cb5e627043ae039b0dd33dbf6, type: 3}
-  quit_selected: {fileID: 2800000, guid: ded397cc048c65c41a08baa0caabc6ba, type: 3}
+  play_selected: {fileID: 2800000, guid: 401fcfde12fbdfb45af6d439e958d667, type: 3}
+  exit_selected: {fileID: 2800000, guid: 821412b5470ba9e42b613de950056b23, type: 3}
+  quit_selected: {fileID: 2800000, guid: be033fb64e387dd47b96fb5c1d976a41, type: 3}
   last_game_object: {fileID: 0}
-  play_unselected: {fileID: 2800000, guid: 401fcfde12fbdfb45af6d439e958d667, type: 3}
-  exit_unselected: {fileID: 2800000, guid: 821412b5470ba9e42b613de950056b23, type: 3}
-  quit_unselected: {fileID: 2800000, guid: be033fb64e387dd47b96fb5c1d976a41, type: 3}
+  play_unselected: {fileID: 2800000, guid: 7ad6fb05f23cf7341bb916442be64f14, type: 3}
+  exit_unselected: {fileID: 2800000, guid: e0c02e5cb5e627043ae039b0dd33dbf6, type: 3}
+  quit_unselected: {fileID: 2800000, guid: fbc005689a86dec4bb59eb957441fd4b, type: 3}
 --- !u!82 &1685500504
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3876,7 +3870,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
   reverbZoneMixCustomCurve:
     serializedVersion: 2
     m_Curve:

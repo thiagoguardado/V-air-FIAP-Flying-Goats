@@ -1,5 +1,8 @@
 #Unity Library Folder
-Library/*
+Library/metadata/*
+Library/ScriptAssemblies/*
+Library/ShaderCache/*
+Temp/*
 
 # Windows image file caches
 Thumbs.db

@@ -37,12 +37,13 @@ public class StartClient : MonoBehaviour {
 
 		VRSettings.enabled = true;
 
+		PlayerDevice.deviceStatus = DeviceStatus.inSession;
+
 		PlayerDevice.SetNewID(deviceID.text);
 		PlayerDevice.FindUserOnDB (demoUserID.ToString());
 
 		Initiate.FadeDefault ("VR_Intro");
 
 	}
-
-
+		
 }

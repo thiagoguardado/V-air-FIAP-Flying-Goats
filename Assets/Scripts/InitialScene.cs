@@ -10,6 +10,12 @@ public class InitialScene : MonoBehaviour {
 
 	void Awake(){
 		VRSettings.enabled = false;
+
+		VRControl vrcontrol = GameObject.FindObjectOfType<VRControl> ();
+		if (vrcontrol != null) {
+			Destroy (vrcontrol.gameObject);
+		}
+
 	}
 
 	public void LoadTotem(){

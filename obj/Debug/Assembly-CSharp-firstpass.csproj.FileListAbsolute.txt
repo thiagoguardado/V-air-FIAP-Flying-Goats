@@ -82,5 +82,3 @@ C:\Users\Thiago\Documents\Unity Projects Cloud\V-air-FIAP-Flying-Goats\Temp\bin\
 C:\Users\Thiago\Documents\Unity Projects Cloud\V-air-FIAP-Flying-Goats\obj\Debug\Assembly-CSharp-firstpass.csprojResolveAssemblyReference.cache
 C:\Users\Thiago\Documents\Unity Projects Cloud\V-air-FIAP-Flying-Goats\obj\Debug\Assembly-CSharp-firstpass.dll
 C:\Users\Thiago\Documents\Unity Projects Cloud\V-air-FIAP-Flying-Goats\obj\Debug\Assembly-CSharp-firstpass.pdb
-C:\Users\thiag\Documents\Unity Projects Cloud\V-air\Temp\bin\Debug\System.Configuration.dll
-C:\Users\thiag\Documents\Unity Projects Cloud\V-air\Temp\bin\Debug\System.Security.dll

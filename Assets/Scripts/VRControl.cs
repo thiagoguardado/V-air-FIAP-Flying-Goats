@@ -17,6 +17,7 @@ public class VRControl : MonoBehaviour {
 
 	public GameObject warningPanel;
 	private bool isPaused = false;
+	private bool isClosing = false;
 	private bool hasWarning = false;
 	private static bool canResumeWarning = true;
 
@@ -66,7 +67,7 @@ public class VRControl : MonoBehaviour {
 		// setup text and audio
 		WarningPanel wp = instance.warningPanel.GetComponent<WarningPanel> ();
 		wp.SetupText (warning [0], warning [1], warning [2]);
-		wp.PlayWarningAudio (audioWarning);
+		wp.PlayWarningAudio ();
 		if (canResume) {
 			canResumeWarning = canResume;
 		} else {
@@ -82,6 +83,7 @@ public class VRControl : MonoBehaviour {
 
 	private void PauseButtonPress ()
 	{
+
 		if (Input.GetButtonDown ("Cancel")) {
 			for (int i = 0; i < pausableScenes.Length; i++) {
 				if (SceneManager.GetActiveScene ().name == pausableScenes [i]) {
@@ -130,10 +132,9 @@ public class VRControl : MonoBehaviour {
 
 					}
 
-					for (int i = 0; i < pausableScenes.Length; i++) {
+					for (int i = 0; i < returnableScenes.Length; i++) {
 
 						if (SceneManager.GetActiveScene ().name == returnableScenes [i]) {
-
 
 							VRControl.BackToMenu ();
 							return;
@@ -142,7 +143,7 @@ public class VRControl : MonoBehaviour {
 
 					}
 
-
+					lookingDownTimer = 0f;
 			
 				}
 			}
@@ -158,21 +159,22 @@ public class VRControl : MonoBehaviour {
 
 	void PauseAction ()
 	{
-		if (hasWarning) {
-			if (canResumeWarning) {
-				ResumeWarningPanel ();
-				return;
+		if (!isClosing) {
+
+			if (hasWarning) {
+				if (canResumeWarning) {
+					ResumeWarningPanel ();
+					return;
+				}
+			} else {
+				if (!isPaused) {
+					OpenPausePanel ();
+				} else {
+					ResumePausePanel ();
+				}
 			}
+			return;
 		}
-		else {
-			if (!isPaused) {
-				OpenPausePanel ();
-			}
-			else {
-				ResumePausePanel ();
-			}
-		}
-		return;
 	}
 
 
@@ -180,6 +182,7 @@ public class VRControl : MonoBehaviour {
 	
 		instance.warningPanel.SetActive (false);
 		instance.pausePanel.SetActive (false);
+
 		Initiate.FadeDefault("VR_MainMenu");
 	
 	}
@@ -187,7 +190,9 @@ public class VRControl : MonoBehaviour {
 
 	public void OpenPausePanel(){
 
-		canvas.worldCamera = Camera.current;
+		transform.parent = Camera.main.transform;
+		canvas.worldCamera = Camera.main;
+		transform.localPosition = new Vector3 (0, 0, 1);
 
 		PauseScene ();
 
@@ -196,6 +201,7 @@ public class VRControl : MonoBehaviour {
 		pausePanel.GetComponent<Animator> ().SetTrigger ("Open");
 		isPaused = true;
 
+		EventSystem.current.SetSelectedGameObject (null);
 		EventSystem.current.SetSelectedGameObject(continuarBotao.gameObject); 
 
 	}
@@ -215,7 +221,9 @@ public class VRControl : MonoBehaviour {
 
 	private void OpenWarningPanel(){
 
-		canvas.worldCamera = Camera.current;
+		transform.parent = Camera.main.transform;
+		canvas.worldCamera = Camera.main;
+		transform.localPosition = new Vector3 (0, 0, 1);
 
 		PauseScene ();
 
@@ -274,12 +282,15 @@ public class VRControl : MonoBehaviour {
 
 	IEnumerator ClosePanel(GameObject panel){
 	
-		
 		panel.GetComponent<Animator>().SetTrigger("Close");
+
+		isClosing = true;
 
 		yield return new WaitForSeconds (1f);
 
 		panel.SetActive (false);
+
+		isClosing = false;;
 	
 	}
 

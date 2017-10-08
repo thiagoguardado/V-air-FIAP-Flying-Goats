@@ -19,6 +19,8 @@ public class TotemExtraFunctions : MonoBehaviour {
 
 		if (device.text != "") {
 			SendWarningEmbarque (device.text);
+		} else {
+			SendWarningEmbarque (device.placeholder.GetComponent<Text>().text);
 		}
 	
 	}

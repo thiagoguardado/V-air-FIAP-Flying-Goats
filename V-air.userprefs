@@ -6,12 +6,24 @@
       <Breakpoint file="C:\Users\thiag\Documents\Unity Projects Cloud\V-air\Assets\Scripts\NewIntroManager.cs" line="83" column="3" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Plugins\Fader\Initiate.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\VRControl.cs">
     <Files>
-      <File FileName="Assets\Plugins\Fader\Initiate.cs" Line="13" Column="3" />
-      <File FileName="Assets\Scripts\VRControl.cs" Line="183" Column="1" />
+      <File FileName="Assets\Plugins\Fader\Initiate.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\TotemExtraFunctions.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\StartServer.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\SendInfoToVR.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\ClientFunctions.cs" Line="14" Column="1" />
+      <File FileName="Assets\VRSampleScenes\Scripts\Utils\ReturnToMainMenu.cs" Line="1" Column="1" />
+      <File FileName="Assets\VRStandardAssets\Scripts\VRInput.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\VRControl.cs" Line="204" Column="1" />
+      <File FileName="Assets\Scripts\InitialScene.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\VRWarnings.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\WarningPanel.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\start_game.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\StartClient.cs" Line="40" Column="3" />
+      <File FileName="Assets\Scripts\MyNetworkManager.cs" Line="21" Column="51" />
+      <File FileName="Assets\Scripts\IdleScreen.cs" Line="10" Column="53" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp-firstpass PreferredExecutionTarget="MonoDevelop.Default" />
 </Properties>

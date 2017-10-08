@@ -26,7 +26,7 @@ public class start_game : MonoBehaviour {
 
 
 
-	void Start () {
+	void Awake () {
 		speed = 0f;
 		up_speed = 0f;
 		audio_source = gameObject.GetComponent<AudioSource> ();
