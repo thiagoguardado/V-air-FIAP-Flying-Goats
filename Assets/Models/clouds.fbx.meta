@@ -1,23 +1,68 @@
 fileFormatVersion: 2
-guid: e9ba43e4c93f77141915b505e63a9dff
-timeCreated: 1507502171
+guid: d51b5df48449cfc4abfde084ffde22df
+timeCreated: 1508096357
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
-    100000: airplane
-    100002: //RootNode
-    100004: helix
-    400000: airplane
-    400002: //RootNode
-    400004: helix
-    2300000: airplane
-    2300002: helix
-    3300000: airplane
-    3300002: helix
-    4300000: helix
-    4300002: airplane
-    7400000: Take 001
+    100000: //RootNode
+    100002: clouds:cloud01
+    100004: clouds:cloud02
+    100006: clouds:cloud03
+    100008: clouds:pSphere1
+    100010: clouds:pSphere10
+    100012: clouds:pSphere11
+    100014: clouds:pSphere12
+    100016: clouds:pSphere13
+    100018: clouds:pSphere15
+    100020: clouds:pSphere2
+    100022: clouds:pSphere3
+    100024: clouds:pSphere4
+    100026: clouds:pSphere5
+    100028: clouds:pSphere7
+    100030: clouds:pSphere8
+    100032: clouds:pSphere9
+    400000: //RootNode
+    400002: clouds:cloud01
+    400004: clouds:cloud02
+    400006: clouds:cloud03
+    400008: clouds:pSphere1
+    400010: clouds:pSphere10
+    400012: clouds:pSphere11
+    400014: clouds:pSphere12
+    400016: clouds:pSphere13
+    400018: clouds:pSphere15
+    400020: clouds:pSphere2
+    400022: clouds:pSphere3
+    400024: clouds:pSphere4
+    400026: clouds:pSphere5
+    400028: clouds:pSphere7
+    400030: clouds:pSphere8
+    400032: clouds:pSphere9
+    2300000: clouds:cloud01
+    2300002: clouds:cloud02
+    2300004: clouds:cloud03
+    2300006: clouds:pSphere1
+    2300008: clouds:pSphere2
+    2300010: clouds:pSphere3
+    2300012: clouds:pSphere4
+    2300014: clouds:pSphere5
+    3300000: clouds:cloud01
+    3300002: clouds:cloud02
+    3300004: clouds:cloud03
+    3300006: clouds:pSphere1
+    3300008: clouds:pSphere2
+    3300010: clouds:pSphere3
+    3300012: clouds:pSphere4
+    3300014: clouds:pSphere5
+    4300000: clouds:pSphere1
+    4300002: clouds:pSphere2
+    4300004: clouds:pSphere3
+    4300006: clouds:pSphere4
+    4300008: clouds:pSphere5
+    4300010: clouds:cloud03
+    4300012: clouds:cloud01
+    4300014: clouds:cloud02
     9500000: //RootNode
   materials:
     importMaterials: 1
