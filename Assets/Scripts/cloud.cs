@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class cloud : MonoBehaviour {
+public class Cloud : MonoBehaviour {
 
-	public float speed;
+	float speed = 40;
 
 	void Update () {
-		transform.Translate(Vector3.right * speed * Time.deltaTime);
+		transform.Translate(Vector3.back * speed * Time.deltaTime);
 	}
 }

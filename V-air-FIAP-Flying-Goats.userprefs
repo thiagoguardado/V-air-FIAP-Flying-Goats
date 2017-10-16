@@ -1,28 +1,12 @@
 ﻿<Properties RefactoringSettings.EnableRefactorings="True" StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\QuizController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\airplaneMovement.cs">
     <Files>
-      <File FileName="Assets\Scripts\ApplicationControl.cs" Line="1" Column="1" />
-      <File FileName="Assets\VRStandardAssets\Scripts\VRTrackingReset.cs" Line="1" Column="1" />
-      <File FileName="Assets\GoogleVR\Scripts\GvrEditorEmulator.cs" Line="1" Column="1" />
-      <File FileName="Assets\GoogleVR\Scripts\Controller\GvrControllerInput.cs" Line="1" Column="1" />
-      <File FileName="Assets\GoogleVR\Scripts\Controller\Internal\ControllerState.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\TotemManager.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\PlayerDevice.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\IdleScreen.cs" Line="1" Column="1" />
-      <File FileName="Assets\Plugins\Fader\Initiate.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\start_game.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\airplaneMovement.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\VRControl.cs" Line="310" Column="3" />
-      <File FileName="Assets\VRStandardAssets\Scripts\VRInput.cs" Line="1" Column="1" />
-      <File FileName="Assets\VRSampleScenes\Scripts\Intro\IntroManager.cs" Line="1" Column="1" />
-      <File FileName="Assets\VRSampleScenes\Scripts\Utils\UIFader.cs" Line="1" Column="1" />
-      <File FileName="Assets\VRSampleScenes\Scripts\Utils\SelectionSlider.cs" Line="1" Column="1" />
-      <File FileName="Assets\VRSampleScenes\Scripts\Maze\SwitchButton.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\NewIntroManager.cs" Line="83" Column="26" />
-      <File FileName="Assets\VRSampleScenes\Scripts\Utils\PlatformDependentText.cs" Line="71" Column="1" />
-      <File FileName="Assets\Scripts\VideoPlayerControl.cs" Line="42" Column="13" />
-      <File FileName="Assets\Scripts\QuizController.cs" Line="133" Column="26" />
+      <File FileName="Assets\Scripts\airplaneMovement.cs" Line="80" Column="25" />
+      <File FileName="Assets\Scripts\start_game.cs" Line="130" Column="72" />
+      <File FileName="Assets\Scripts\Cloud.cs" Line="8" Column="2" />
+      <File FileName="Assets\Scripts\CloudInstantiator.cs" Line="19" Column="21" />
+      <File FileName="Assets\Scripts\ringInstantiator.cs" Line="8" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

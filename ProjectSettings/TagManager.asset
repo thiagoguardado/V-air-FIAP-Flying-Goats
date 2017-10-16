@@ -7,6 +7,16 @@ TagManager:
   - Seat
   - PlayerDevice
   - NetworkManager
+  - exit
+  - warning
+  - start
+  - play
+  - pause_menu
+  - playable
+  - quit
+  - ring
+  - full-score
+  - cloud
   layers:
   - Default
   - TransparentFX
