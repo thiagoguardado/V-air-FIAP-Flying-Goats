@@ -8,5 +8,8 @@ public class Cloud : MonoBehaviour {
 
 	void Update () {
 		transform.Translate(Vector3.back * speed * Time.deltaTime);
+		if (transform.position.z < -20f) {
+			Destroy (this.gameObject);
+		}
 	}
 }

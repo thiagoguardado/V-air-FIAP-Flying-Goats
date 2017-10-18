@@ -72,11 +72,11 @@ public class airplaneMovement : MonoBehaviour {
 		//transform.LookAt (new Vector3(transform.position.x, aim.transform.position.y, 80f));
 
 		dif = aim.transform.position.x - transform.rotation.z;
-		if (dif > 25) {
+		if (dif > 30) {
 			if (turn_verify) {
 				StartCoroutine(TurnPlane (-15, 0.5f));
 			}
-		} else if (dif < -25){
+		} else if (dif < -30){
 			if (turn_verify) {
 				StartCoroutine(TurnPlane (15, 0.5f));
 			}
