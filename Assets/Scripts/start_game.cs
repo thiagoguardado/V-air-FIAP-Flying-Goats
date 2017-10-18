@@ -28,7 +28,8 @@ public class start_game : MonoBehaviour {
 	RectTransform barRect;
 	public RectTransform select_bar;
 	public GameObject camera;
-
+	public Material material;
+	bool changing;
 
 
 	void Awake () {
@@ -95,8 +96,9 @@ public class start_game : MonoBehaviour {
 				up_speed = up_speed + 0.01f;
 			}
 			transform.Translate (Vector3.back * Time.deltaTime * speed);
-			if (transform.position.y < -18) {
-				GetComponent<MeshRenderer> ().enabled = false;
+			if (transform.position.y < -18 && !changing) {
+				changing = true;
+				StartCoroutine(ChangeAlpha ());
 			} 
 		}
 
@@ -241,5 +243,24 @@ public class start_game : MonoBehaviour {
 		barRect.localScale = new Vector3 (0.17f, 0.15f, 0.3f);
 		barRect.transform.position = new Vector3 (0, -0.15f, 0.5f);
 		yield return null;
+	}
+
+	IEnumerator ChangeAlpha () {
+		if (material.color.a < 1) {
+			material.color = new Color (material.color.r, material.color.g, material.color.b, material.color.a + 0.01f);
+			yield return new WaitForSeconds (0.001f);
+			StartCoroutine (ChangeAlpha ());
+		} else {
+			StartCoroutine (ReturnAlpha ());
+		}
+	}
+
+	IEnumerator ReturnAlpha() {
+		GetComponent<MeshRenderer> ().enabled = false;
+		if (material.color.a >= 0) {
+			material.color = new Color (material.color.r, material.color.g, material.color.b, material.color.a - 0.01f);
+			yield return new WaitForSeconds (0.001f);
+			StartCoroutine (ReturnAlpha ());
+		}
 	}
 }

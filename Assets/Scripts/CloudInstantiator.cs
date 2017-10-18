@@ -10,7 +10,7 @@ public class CloudInstantiator : MonoBehaviour {
 
 
 	void Start () {
-		range_x = new int[2] {-1000, 1000};
+		range_x = new int[2] {-300, 300};
 		range_y = new int[2] {-100, 65};
 		StartCoroutine (Spawner());
 	}
