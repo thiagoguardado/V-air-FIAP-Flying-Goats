@@ -31,6 +31,9 @@ EditorBuildSettings:
     guid: 50f96a29e6606ad499745f19b25c6f97
   - enabled: 1
     path: Assets/Scenes/VR/VR_Game.unity
+    guid: 15b167781fb13c34499eb94595707ec5
+  - enabled: 0
+    path: Assets/Scenes/VR/VR_Game_old.unity
     guid: 2afeee4fc1e045745b7b4cbddfb6734e
   - enabled: 1
     path: Assets/Scenes/VR/VR_Intro.unity

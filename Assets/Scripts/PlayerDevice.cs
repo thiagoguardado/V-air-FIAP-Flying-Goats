@@ -86,10 +86,16 @@ public class PlayerDevice : MonoBehaviour {
 
 	public static void EndSession(){
 
-		deviceStatus = DeviceStatus.idle;
-		currentUser = new VRUser (-1, "null", "null", "null","null","null");
-		currentUserID = -1;
-		Initiate.FadeDefault ("VR_Idle");
+//		deviceStatus = DeviceStatus.idle;
+//		currentUser = new VRUser (-1, "null", "null", "null","null","null");
+//		currentUserID = -1;
+//		Initiate.FadeDefault ("VR_Idle");
+
+		// restart demo
+		deviceStatus = DeviceStatus.inSession;
+		SetNewID("A1");
+		FindUserOnDB (Random.Range(1,11).ToString());
+		Initiate.FadeDefault ("VR_Intro");
 
 
 	}

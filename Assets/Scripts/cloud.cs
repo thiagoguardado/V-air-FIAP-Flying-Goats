@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Cloud : MonoBehaviour {
+public class cloud : MonoBehaviour {
 
 	float speed = 40;
 
