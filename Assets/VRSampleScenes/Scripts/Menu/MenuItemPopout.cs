@@ -17,6 +17,10 @@ namespace VRStandardAssets.Menu
         private Vector3 m_PoppedPosition;                       // The position aimed for when the item should be popped out.
         private Vector3 m_TargetPosition;                       // The current position being aimed for.
 
+		public bool changeMaterial = false;
+		public Material selectedMaterial;
+		public Material unselectedMaterial;
+		public Renderer renderer;
 
         private void Start ()
         {
@@ -31,7 +35,23 @@ namespace VRStandardAssets.Menu
         private void Update ()
         {
             // Set the target position based on whether the item is being looked at or not.
-            m_TargetPosition = m_Item.IsOver ? m_PoppedPosition : m_StartPosition;
+           
+			if (m_Item.IsOver) {
+			
+				m_TargetPosition = m_PoppedPosition;
+				if (changeMaterial) {
+					renderer.material = selectedMaterial;
+				}
+
+			} else {
+			
+				m_TargetPosition = m_StartPosition;
+				if (changeMaterial) {
+					renderer.material = unselectedMaterial;
+				}
+
+			}
+
 
             // Move towards the target position.
             m_Transform.position = Vector3.MoveTowards(m_Transform.position, m_TargetPosition, m_PopSpeed * Time.deltaTime);

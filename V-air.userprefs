@@ -6,7 +6,7 @@
       <Breakpoint file="C:\Users\thiag\Documents\Unity Projects Cloud\V-air\Assets\Scripts\NewIntroManager.cs" line="83" column="3" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\PlayerDevice.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\VRSampleScenes\Scripts\Menu\MenuItemPopout.cs">
     <Files>
       <File FileName="Assets\Plugins\Fader\Initiate.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\TotemExtraFunctions.cs" Line="1" Column="1" />
@@ -15,27 +15,18 @@
       <File FileName="Assets\Scripts\ClientFunctions.cs" Line="1" Column="1" />
       <File FileName="Assets\VRSampleScenes\Scripts\Utils\ReturnToMainMenu.cs" Line="1" Column="1" />
       <File FileName="Assets\VRStandardAssets\Scripts\VRInput.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\VRControl.cs" Line="325" Column="26" />
+      <File FileName="Assets\Scripts\VRControl.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\InitialScene.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\VRWarnings.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\WarningPanel.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\start_game.cs" Line="249" Column="1" />
-      <File FileName="Assets\Scripts\StartClient.cs" Line="13" Column="28" />
+      <File FileName="Assets\Scripts\start_game.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\StartClient.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\MyNetworkManager.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\IdleScreen.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\cloud.cs" Line="5" Column="15" />
-      <File FileName="Assets\Scripts\PlayerDevice.cs" Line="98" Column="3" />
+      <File FileName="Assets\Scripts\cloud.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\PlayerDevice.cs" Line="1" Column="1" />
+      <File FileName="Assets\VRSampleScenes\Scripts\Menu\MenuItemPopout.cs" Line="50" Column="44" />
     </Files>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State name="__root__">
-          <Node name="V-air" expanded="True">
-            <Node name="Assembly-CSharp" expanded="True" />
-            <Node name="Assembly-CSharp-Editor" expanded="True" />
-          </Node>
-        </State>
-      </Pad>
-    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MultiItemStartupConfigurations />
 </Properties>

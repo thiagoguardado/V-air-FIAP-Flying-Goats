@@ -1407,7 +1407,7 @@ MonoBehaviour:
   poltronaPainelConfirmacao: {fileID: 1623145055}
   timerConfirmacao: {fileID: 1615584999}
   timerDuration: 20
-  refreshStatus: 1
+  refreshStatus: 0
   refreshInterval: 1
 --- !u!114 &906911341
 MonoBehaviour:

@@ -122,7 +122,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 498362, guid: fe0047c62a262f74991aa39a7bc71ae4, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -0.85999995
+      value: -1.19
       objectReference: {fileID: 0}
     - target: {fileID: 498362, guid: fe0047c62a262f74991aa39a7bc71ae4, type: 2}
       propertyPath: m_LocalPosition.z
@@ -381,35 +381,35 @@ Prefab:
     m_Modifications:
     - target: {fileID: 11434664, guid: 8425dec361a86f6419d316a88d6c87d9, type: 2}
       propertyPath: m_AnimTextures.Array.size
-      value: 1
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 426494, guid: 8425dec361a86f6419d316a88d6c87d9, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 2.34
       objectReference: {fileID: 0}
     - target: {fileID: 426494, guid: 8425dec361a86f6419d316a88d6c87d9, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -0.86
+      value: -6.24
       objectReference: {fileID: 0}
     - target: {fileID: 426494, guid: 8425dec361a86f6419d316a88d6c87d9, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -17.11
       objectReference: {fileID: 0}
     - target: {fileID: 426494, guid: 8425dec361a86f6419d316a88d6c87d9, type: 2}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 426494, guid: 8425dec361a86f6419d316a88d6c87d9, type: 2}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: 0.03355992
       objectReference: {fileID: 0}
     - target: {fileID: 426494, guid: 8425dec361a86f6419d316a88d6c87d9, type: 2}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 426494, guid: 8425dec361a86f6419d316a88d6c87d9, type: 2}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.99943674
       objectReference: {fileID: 0}
     - target: {fileID: 426494, guid: 8425dec361a86f6419d316a88d6c87d9, type: 2}
       propertyPath: m_RootOrder
@@ -426,23 +426,23 @@ Prefab:
     - target: {fileID: 11434664, guid: 8425dec361a86f6419d316a88d6c87d9, type: 2}
       propertyPath: m_AnimTextures.Array.data[0]
       value: 
-      objectReference: {fileID: 2800000, guid: a0dae71929b720c45be7e8d77e72223e, type: 3}
+      objectReference: {fileID: 2800000, guid: 5b355b4295549974d82a8e7200741217, type: 3}
     - target: {fileID: 11434664, guid: 8425dec361a86f6419d316a88d6c87d9, type: 2}
       propertyPath: m_AnimTextures.Array.data[1]
       value: 
-      objectReference: {fileID: 2800000, guid: 6b7b9f33e5ea06e448849b1f5bf5a33b, type: 3}
+      objectReference: {fileID: 2800000, guid: ac7c3e11c00ea734c91cc0193626cdeb, type: 3}
     - target: {fileID: 11434664, guid: 8425dec361a86f6419d316a88d6c87d9, type: 2}
       propertyPath: m_AnimTextures.Array.data[2]
       value: 
-      objectReference: {fileID: 2800000, guid: 748dd63b97f0806428f3f4d25b167e8e, type: 3}
+      objectReference: {fileID: 2800000, guid: 0c8943cfd377d594f866f6f7e44b70e8, type: 3}
     - target: {fileID: 11434664, guid: 8425dec361a86f6419d316a88d6c87d9, type: 2}
       propertyPath: m_AnimTextures.Array.data[3]
       value: 
-      objectReference: {fileID: 2800000, guid: e4f7581cbcc7c844286912c6cf9a4e6b, type: 3}
+      objectReference: {fileID: 2800000, guid: 93f5a32737329c74b9b28fada48d3c4e, type: 3}
     - target: {fileID: 11434664, guid: 8425dec361a86f6419d316a88d6c87d9, type: 2}
       propertyPath: m_AnimTextures.Array.data[4]
       value: 
-      objectReference: {fileID: 2800000, guid: 633e56633a3c5ba42aa21e31f6f90e7a, type: 3}
+      objectReference: {fileID: 2800000, guid: a16e2fa44b082284cbbc5d19a03cc597, type: 3}
     - target: {fileID: 11434664, guid: 8425dec361a86f6419d316a88d6c87d9, type: 2}
       propertyPath: m_AnimTextures.Array.data[5]
       value: 
@@ -766,11 +766,11 @@ Prefab:
     - target: {fileID: 3330078, guid: 8425dec361a86f6419d316a88d6c87d9, type: 2}
       propertyPath: m_Mesh
       value: 
-      objectReference: {fileID: 4300002, guid: 9ba769b11058ca0479eb5cff44591cb9, type: 3}
+      objectReference: {fileID: 4300004, guid: 9cdc71ad04d15514ca845f33ee26e8f4, type: 3}
     - target: {fileID: 6411402, guid: 8425dec361a86f6419d316a88d6c87d9, type: 2}
       propertyPath: m_Mesh
       value: 
-      objectReference: {fileID: 4300002, guid: 9ba769b11058ca0479eb5cff44591cb9, type: 3}
+      objectReference: {fileID: 4300004, guid: 9cdc71ad04d15514ca845f33ee26e8f4, type: 3}
     - target: {fileID: 11461874, guid: 8425dec361a86f6419d316a88d6c87d9, type: 2}
       propertyPath: m_SceneToLoad
       value: VR_ToursMenu
@@ -781,15 +781,39 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 426494, guid: 8425dec361a86f6419d316a88d6c87d9, type: 2}
       propertyPath: m_LocalScale.x
-      value: 1
+      value: 3.93095
       objectReference: {fileID: 0}
     - target: {fileID: 426494, guid: 8425dec361a86f6419d316a88d6c87d9, type: 2}
       propertyPath: m_LocalScale.y
-      value: 1
+      value: 2.854583
       objectReference: {fileID: 0}
     - target: {fileID: 426494, guid: 8425dec361a86f6419d316a88d6c87d9, type: 2}
       propertyPath: m_LocalScale.z
+      value: 2.854583
+      objectReference: {fileID: 0}
+    - target: {fileID: 11487422, guid: 8425dec361a86f6419d316a88d6c87d9, type: 2}
+      propertyPath: changeMaterial
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11487422, guid: 8425dec361a86f6419d316a88d6c87d9, type: 2}
+      propertyPath: selectedMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 369496c6496763c47beab10f6b586248, type: 2}
+    - target: {fileID: 11487422, guid: 8425dec361a86f6419d316a88d6c87d9, type: 2}
+      propertyPath: unselectedMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: e6c489be84a524546821e96ff36830c1, type: 2}
+    - target: {fileID: 11487422, guid: 8425dec361a86f6419d316a88d6c87d9, type: 2}
+      propertyPath: renderer
+      value: 
+      objectReference: {fileID: 1127080767}
+    - target: {fileID: 426494, guid: 8425dec361a86f6419d316a88d6c87d9, type: 2}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 3.8460002
+      objectReference: {fileID: 0}
+    - target: {fileID: 11434664, guid: 8425dec361a86f6419d316a88d6c87d9, type: 2}
+      propertyPath: m_FrameRate
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8247036, guid: 8425dec361a86f6419d316a88d6c87d9, type: 2}
@@ -882,7 +906,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 229671326}
   m_LocalRotation: {x: -0, y: 0.6528128, z: -0, w: 0.75751925}
-  m_LocalPosition: {x: 0, y: 3.8, z: 0}
+  m_LocalPosition: {x: 0, y: 3.23, z: 0}
   m_LocalScale: {x: 1.2699997, y: 0.97635823, z: 1.2699996}
   m_Children:
   - {fileID: 723967001}
@@ -944,7 +968,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 388660237}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 3.8, z: 0}
+  m_LocalPosition: {x: 0, y: 3.23, z: 0}
   m_LocalScale: {x: 1.27, y: 0.97635823, z: 1.2699999}
   m_Children:
   - {fileID: 1127080766}
@@ -1096,7 +1120,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 580064403}
   m_LocalRotation: {x: -0, y: -0.63494843, z: -0, w: 0.7725546}
-  m_LocalPosition: {x: 0, y: 3.8, z: 0}
+  m_LocalPosition: {x: 0, y: 3.23, z: 0}
   m_LocalScale: {x: 1.2700002, y: 0.97635823, z: 1.2700001}
   m_Children:
   - {fileID: 471900790}
@@ -1356,35 +1380,35 @@ Prefab:
     m_Modifications:
     - target: {fileID: 11480060, guid: 91b3bfdb6dd0b8847af2aed0f548e04a, type: 2}
       propertyPath: m_AnimTextures.Array.size
-      value: 1
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 466652, guid: 91b3bfdb6dd0b8847af2aed0f548e04a, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 2.34
       objectReference: {fileID: 0}
     - target: {fileID: 466652, guid: 91b3bfdb6dd0b8847af2aed0f548e04a, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -0.85999995
+      value: -6.24
       objectReference: {fileID: 0}
     - target: {fileID: 466652, guid: 91b3bfdb6dd0b8847af2aed0f548e04a, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -17.11
       objectReference: {fileID: 0}
     - target: {fileID: 466652, guid: 91b3bfdb6dd0b8847af2aed0f548e04a, type: 2}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 466652, guid: 91b3bfdb6dd0b8847af2aed0f548e04a, type: 2}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: 0.03355992
       objectReference: {fileID: 0}
     - target: {fileID: 466652, guid: 91b3bfdb6dd0b8847af2aed0f548e04a, type: 2}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 466652, guid: 91b3bfdb6dd0b8847af2aed0f548e04a, type: 2}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.99943674
       objectReference: {fileID: 0}
     - target: {fileID: 466652, guid: 91b3bfdb6dd0b8847af2aed0f548e04a, type: 2}
       propertyPath: m_RootOrder
@@ -1401,43 +1425,43 @@ Prefab:
     - target: {fileID: 11480060, guid: 91b3bfdb6dd0b8847af2aed0f548e04a, type: 2}
       propertyPath: m_AnimTextures.Array.data[0]
       value: 
-      objectReference: {fileID: 2800000, guid: 778af80ccd078ae4089f03a95de839dc, type: 3}
+      objectReference: {fileID: 2800000, guid: e8cafa15389992a4b9850e58ba9fe38b, type: 3}
     - target: {fileID: 11480060, guid: 91b3bfdb6dd0b8847af2aed0f548e04a, type: 2}
       propertyPath: m_AnimTextures.Array.data[1]
       value: 
-      objectReference: {fileID: 2800000, guid: ed0e9cb8587ee9447b89630a9fe84047, type: 3}
+      objectReference: {fileID: 2800000, guid: 5fc4932575cdd41459836f7580266107, type: 3}
     - target: {fileID: 11480060, guid: 91b3bfdb6dd0b8847af2aed0f548e04a, type: 2}
       propertyPath: m_AnimTextures.Array.data[2]
       value: 
-      objectReference: {fileID: 2800000, guid: dc4d1f62feb06a445bcf1f305862f6bb, type: 3}
+      objectReference: {fileID: 2800000, guid: d5c99f106af13fc48a1f235fff215171, type: 3}
     - target: {fileID: 11480060, guid: 91b3bfdb6dd0b8847af2aed0f548e04a, type: 2}
       propertyPath: m_AnimTextures.Array.data[3]
       value: 
-      objectReference: {fileID: 2800000, guid: 234249532ee735e4297de2642ede4890, type: 3}
+      objectReference: {fileID: 2800000, guid: 91b525fd65228db49a8dcd18c2423214, type: 3}
     - target: {fileID: 11480060, guid: 91b3bfdb6dd0b8847af2aed0f548e04a, type: 2}
       propertyPath: m_AnimTextures.Array.data[4]
       value: 
-      objectReference: {fileID: 2800000, guid: 4c064b681a454074592607f982a5c4c7, type: 3}
+      objectReference: {fileID: 2800000, guid: c1593373034906947bf4f8ebeddd1adf, type: 3}
     - target: {fileID: 11480060, guid: 91b3bfdb6dd0b8847af2aed0f548e04a, type: 2}
       propertyPath: m_AnimTextures.Array.data[5]
       value: 
-      objectReference: {fileID: 2800000, guid: 8b9a661aedcfb934bbb36dec627706cc, type: 3}
+      objectReference: {fileID: 2800000, guid: 035733a4d96a7264bbc895542081ec7e, type: 3}
     - target: {fileID: 11480060, guid: 91b3bfdb6dd0b8847af2aed0f548e04a, type: 2}
       propertyPath: m_AnimTextures.Array.data[6]
       value: 
-      objectReference: {fileID: 2800000, guid: 6070f86fc80d78c4cade3657996be90a, type: 3}
+      objectReference: {fileID: 2800000, guid: d956ab7a3850eb7408b9a7bb009f3184, type: 3}
     - target: {fileID: 11480060, guid: 91b3bfdb6dd0b8847af2aed0f548e04a, type: 2}
       propertyPath: m_AnimTextures.Array.data[7]
       value: 
-      objectReference: {fileID: 2800000, guid: 713a3603f561b5f44b632bb6d74a6583, type: 3}
+      objectReference: {fileID: 2800000, guid: 681bc2b9835d3574b9c389013276d130, type: 3}
     - target: {fileID: 11480060, guid: 91b3bfdb6dd0b8847af2aed0f548e04a, type: 2}
       propertyPath: m_AnimTextures.Array.data[8]
       value: 
-      objectReference: {fileID: 2800000, guid: c31254a8e2b8d3b4eb9b74119e2c7db5, type: 3}
+      objectReference: {fileID: 2800000, guid: 426e4e054300ef8458f26501412ae934, type: 3}
     - target: {fileID: 11480060, guid: 91b3bfdb6dd0b8847af2aed0f548e04a, type: 2}
       propertyPath: m_AnimTextures.Array.data[9]
       value: 
-      objectReference: {fileID: 2800000, guid: d968ded408497024f9953962544a322f, type: 3}
+      objectReference: {fileID: 2800000, guid: d3515d0b747f47a41a34a6c17d0e8615, type: 3}
     - target: {fileID: 11480060, guid: 91b3bfdb6dd0b8847af2aed0f548e04a, type: 2}
       propertyPath: m_AnimTextures.Array.data[10]
       value: 
@@ -1649,11 +1673,11 @@ Prefab:
     - target: {fileID: 3333766, guid: 91b3bfdb6dd0b8847af2aed0f548e04a, type: 2}
       propertyPath: m_Mesh
       value: 
-      objectReference: {fileID: 4300002, guid: 9ba769b11058ca0479eb5cff44591cb9, type: 3}
+      objectReference: {fileID: 4300004, guid: 9cdc71ad04d15514ca845f33ee26e8f4, type: 3}
     - target: {fileID: 6488914, guid: 91b3bfdb6dd0b8847af2aed0f548e04a, type: 2}
       propertyPath: m_Mesh
       value: 
-      objectReference: {fileID: 4300002, guid: 9ba769b11058ca0479eb5cff44591cb9, type: 3}
+      objectReference: {fileID: 4300004, guid: 9cdc71ad04d15514ca845f33ee26e8f4, type: 3}
     - target: {fileID: 11450468, guid: 91b3bfdb6dd0b8847af2aed0f548e04a, type: 2}
       propertyPath: m_SceneToLoad
       value: VR_QuizesMenu
@@ -1664,15 +1688,39 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 466652, guid: 91b3bfdb6dd0b8847af2aed0f548e04a, type: 2}
       propertyPath: m_LocalScale.x
-      value: 1
+      value: 3.93095
       objectReference: {fileID: 0}
     - target: {fileID: 466652, guid: 91b3bfdb6dd0b8847af2aed0f548e04a, type: 2}
       propertyPath: m_LocalScale.y
-      value: 1
+      value: 2.854583
       objectReference: {fileID: 0}
     - target: {fileID: 466652, guid: 91b3bfdb6dd0b8847af2aed0f548e04a, type: 2}
       propertyPath: m_LocalScale.z
+      value: 2.854583
+      objectReference: {fileID: 0}
+    - target: {fileID: 11412586, guid: 91b3bfdb6dd0b8847af2aed0f548e04a, type: 2}
+      propertyPath: changeMaterial
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11412586, guid: 91b3bfdb6dd0b8847af2aed0f548e04a, type: 2}
+      propertyPath: selectedMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 369496c6496763c47beab10f6b586248, type: 2}
+    - target: {fileID: 11412586, guid: 91b3bfdb6dd0b8847af2aed0f548e04a, type: 2}
+      propertyPath: unselectedMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: e6c489be84a524546821e96ff36830c1, type: 2}
+    - target: {fileID: 11412586, guid: 91b3bfdb6dd0b8847af2aed0f548e04a, type: 2}
+      propertyPath: renderer
+      value: 
+      objectReference: {fileID: 471900791}
+    - target: {fileID: 466652, guid: 91b3bfdb6dd0b8847af2aed0f548e04a, type: 2}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 3.8460002
+      objectReference: {fileID: 0}
+    - target: {fileID: 11480060, guid: 91b3bfdb6dd0b8847af2aed0f548e04a, type: 2}
+      propertyPath: m_FrameRate
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8213178, guid: 91b3bfdb6dd0b8847af2aed0f548e04a, type: 2}
@@ -1705,7 +1753,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 831710719}
   m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071067}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -0.8, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 704221361}
@@ -1741,35 +1789,35 @@ Prefab:
     m_Modifications:
     - target: {fileID: 11443544, guid: 19eafe53a7aadc644bc46200d92edfcb, type: 2}
       propertyPath: m_AnimTextures.Array.size
-      value: 1
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 464712, guid: 19eafe53a7aadc644bc46200d92edfcb, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 2.34
       objectReference: {fileID: 0}
     - target: {fileID: 464712, guid: 19eafe53a7aadc644bc46200d92edfcb, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -0.85999995
+      value: -6.24
       objectReference: {fileID: 0}
     - target: {fileID: 464712, guid: 19eafe53a7aadc644bc46200d92edfcb, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -17.11
       objectReference: {fileID: 0}
     - target: {fileID: 464712, guid: 19eafe53a7aadc644bc46200d92edfcb, type: 2}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 464712, guid: 19eafe53a7aadc644bc46200d92edfcb, type: 2}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: 0.03355992
       objectReference: {fileID: 0}
     - target: {fileID: 464712, guid: 19eafe53a7aadc644bc46200d92edfcb, type: 2}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 464712, guid: 19eafe53a7aadc644bc46200d92edfcb, type: 2}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.99943674
       objectReference: {fileID: 0}
     - target: {fileID: 464712, guid: 19eafe53a7aadc644bc46200d92edfcb, type: 2}
       propertyPath: m_RootOrder
@@ -1786,103 +1834,103 @@ Prefab:
     - target: {fileID: 11443544, guid: 19eafe53a7aadc644bc46200d92edfcb, type: 2}
       propertyPath: m_AnimTextures.Array.data[0]
       value: 
-      objectReference: {fileID: 2800000, guid: 369a87401aa58bc47aaee744396f2724, type: 3}
+      objectReference: {fileID: 2800000, guid: 1d3f55a007656de4d913dac6663d5f1f, type: 3}
     - target: {fileID: 11443544, guid: 19eafe53a7aadc644bc46200d92edfcb, type: 2}
       propertyPath: m_AnimTextures.Array.data[1]
       value: 
-      objectReference: {fileID: 2800000, guid: 103ed0dd0eca218408c6edb8d46be84d, type: 3}
+      objectReference: {fileID: 2800000, guid: ab37345f05c859b4eabb236533faf064, type: 3}
     - target: {fileID: 11443544, guid: 19eafe53a7aadc644bc46200d92edfcb, type: 2}
       propertyPath: m_AnimTextures.Array.data[2]
       value: 
-      objectReference: {fileID: 2800000, guid: fc912355ce6a7624091aba9eb6b44ca5, type: 3}
+      objectReference: {fileID: 2800000, guid: e66760a9fbf539e42b0de741b228937e, type: 3}
     - target: {fileID: 11443544, guid: 19eafe53a7aadc644bc46200d92edfcb, type: 2}
       propertyPath: m_AnimTextures.Array.data[3]
       value: 
-      objectReference: {fileID: 2800000, guid: 0beea174b1803d64cb262d1bfc8ebee6, type: 3}
+      objectReference: {fileID: 2800000, guid: 802423437b2ef7a42b9cfe4aa65b4ab9, type: 3}
     - target: {fileID: 11443544, guid: 19eafe53a7aadc644bc46200d92edfcb, type: 2}
       propertyPath: m_AnimTextures.Array.data[4]
       value: 
-      objectReference: {fileID: 2800000, guid: ad47475cc63f00b4fade59c6edb3c5f2, type: 3}
+      objectReference: {fileID: 2800000, guid: 51b4ad7dba0084f4db8b20b5656aa1b5, type: 3}
     - target: {fileID: 11443544, guid: 19eafe53a7aadc644bc46200d92edfcb, type: 2}
       propertyPath: m_AnimTextures.Array.data[5]
       value: 
-      objectReference: {fileID: 2800000, guid: 817d569b704b7234b99aa67d0dc96b36, type: 3}
+      objectReference: {fileID: 2800000, guid: 1b1b4fe1513d00f4bb819262b38420e9, type: 3}
     - target: {fileID: 11443544, guid: 19eafe53a7aadc644bc46200d92edfcb, type: 2}
       propertyPath: m_AnimTextures.Array.data[6]
       value: 
-      objectReference: {fileID: 2800000, guid: a2d9764a4821530499a92dda8acf90fa, type: 3}
+      objectReference: {fileID: 2800000, guid: c9b6aecd29cf6d747bbec1d168bb8119, type: 3}
     - target: {fileID: 11443544, guid: 19eafe53a7aadc644bc46200d92edfcb, type: 2}
       propertyPath: m_AnimTextures.Array.data[7]
       value: 
-      objectReference: {fileID: 2800000, guid: 22645fd0d24914b4388db0207b3cc013, type: 3}
+      objectReference: {fileID: 2800000, guid: 0d1fd3bdd841efa4ba7c6c80c300ab78, type: 3}
     - target: {fileID: 11443544, guid: 19eafe53a7aadc644bc46200d92edfcb, type: 2}
       propertyPath: m_AnimTextures.Array.data[8]
       value: 
-      objectReference: {fileID: 2800000, guid: 2aa89f7844698b9409db761eee1db188, type: 3}
+      objectReference: {fileID: 2800000, guid: 98d6bbf36e70f424891c1658d225230d, type: 3}
     - target: {fileID: 11443544, guid: 19eafe53a7aadc644bc46200d92edfcb, type: 2}
       propertyPath: m_AnimTextures.Array.data[9]
       value: 
-      objectReference: {fileID: 2800000, guid: 0abf3a0f65e3efe4bb3326f5e0179801, type: 3}
+      objectReference: {fileID: 2800000, guid: 0377d5a6f7ab32d4b9b5db8c1ba8ef13, type: 3}
     - target: {fileID: 11443544, guid: 19eafe53a7aadc644bc46200d92edfcb, type: 2}
       propertyPath: m_AnimTextures.Array.data[10]
       value: 
-      objectReference: {fileID: 2800000, guid: ea8ca77e537741b468d8a8107e5706e8, type: 3}
+      objectReference: {fileID: 2800000, guid: 8b81f548b3e24b34c89176a568b59292, type: 3}
     - target: {fileID: 11443544, guid: 19eafe53a7aadc644bc46200d92edfcb, type: 2}
       propertyPath: m_AnimTextures.Array.data[11]
       value: 
-      objectReference: {fileID: 2800000, guid: 080bf2c47a5fe634abd16012022fd63e, type: 3}
+      objectReference: {fileID: 2800000, guid: 2080a9c5b3e71134095902fb9bcd4689, type: 3}
     - target: {fileID: 11443544, guid: 19eafe53a7aadc644bc46200d92edfcb, type: 2}
       propertyPath: m_AnimTextures.Array.data[12]
       value: 
-      objectReference: {fileID: 2800000, guid: 174d94e2be0b2d14ab68c4285c04169c, type: 3}
+      objectReference: {fileID: 2800000, guid: c05f540e4e3c09e448b8f1af80687c3a, type: 3}
     - target: {fileID: 11443544, guid: 19eafe53a7aadc644bc46200d92edfcb, type: 2}
       propertyPath: m_AnimTextures.Array.data[13]
       value: 
-      objectReference: {fileID: 2800000, guid: 3215769ada76ed4438ffa6edcae898bf, type: 3}
+      objectReference: {fileID: 2800000, guid: 69d0e19f08a82f243ae3fead28642ac8, type: 3}
     - target: {fileID: 11443544, guid: 19eafe53a7aadc644bc46200d92edfcb, type: 2}
       propertyPath: m_AnimTextures.Array.data[14]
       value: 
-      objectReference: {fileID: 2800000, guid: 65a4eece8dd13474eb1c4f4c89c726c0, type: 3}
+      objectReference: {fileID: 2800000, guid: efcadba3fcaa8db4c9e8c6077136c10b, type: 3}
     - target: {fileID: 11443544, guid: 19eafe53a7aadc644bc46200d92edfcb, type: 2}
       propertyPath: m_AnimTextures.Array.data[15]
       value: 
-      objectReference: {fileID: 2800000, guid: 117672512b5cf314bb0a50ea2f196cb2, type: 3}
+      objectReference: {fileID: 2800000, guid: e8ed680a0a44fdc4fabcc241e77db1ab, type: 3}
     - target: {fileID: 11443544, guid: 19eafe53a7aadc644bc46200d92edfcb, type: 2}
       propertyPath: m_AnimTextures.Array.data[16]
       value: 
-      objectReference: {fileID: 2800000, guid: c36eb222016ff184d94d4f24f344e390, type: 3}
+      objectReference: {fileID: 2800000, guid: ac4b5cad6e3c3104dbe0438c1f7faa4f, type: 3}
     - target: {fileID: 11443544, guid: 19eafe53a7aadc644bc46200d92edfcb, type: 2}
       propertyPath: m_AnimTextures.Array.data[17]
       value: 
-      objectReference: {fileID: 2800000, guid: 356c7d637c3bec74da85f84a40ee9c93, type: 3}
+      objectReference: {fileID: 2800000, guid: 54e9dd9f2dd16b340b06ece3bf0b96d1, type: 3}
     - target: {fileID: 11443544, guid: 19eafe53a7aadc644bc46200d92edfcb, type: 2}
       propertyPath: m_AnimTextures.Array.data[18]
       value: 
-      objectReference: {fileID: 2800000, guid: cb90e92da7d726446bd4caba98e4fc49, type: 3}
+      objectReference: {fileID: 2800000, guid: 347b7f50004ed484d891a136fa5f1c19, type: 3}
     - target: {fileID: 11443544, guid: 19eafe53a7aadc644bc46200d92edfcb, type: 2}
       propertyPath: m_AnimTextures.Array.data[19]
       value: 
-      objectReference: {fileID: 2800000, guid: 79a2f911348f7254a91f3a63e3b667bc, type: 3}
+      objectReference: {fileID: 2800000, guid: 626bc109935c99c4cb6738128abca49a, type: 3}
     - target: {fileID: 11443544, guid: 19eafe53a7aadc644bc46200d92edfcb, type: 2}
       propertyPath: m_AnimTextures.Array.data[20]
       value: 
-      objectReference: {fileID: 2800000, guid: 0a37e7748bad5a347b34dbcc00f809e8, type: 3}
+      objectReference: {fileID: 2800000, guid: df27c6d07976d8a499f7e07455a9fc95, type: 3}
     - target: {fileID: 11443544, guid: 19eafe53a7aadc644bc46200d92edfcb, type: 2}
       propertyPath: m_AnimTextures.Array.data[21]
       value: 
-      objectReference: {fileID: 2800000, guid: 4fe85a1c549a93e4ca74f50a991a74f5, type: 3}
+      objectReference: {fileID: 2800000, guid: d317a17639f44604097f96a7dc8d800d, type: 3}
     - target: {fileID: 11443544, guid: 19eafe53a7aadc644bc46200d92edfcb, type: 2}
       propertyPath: m_AnimTextures.Array.data[22]
       value: 
-      objectReference: {fileID: 2800000, guid: 38a32f56061210c46a111b973260802a, type: 3}
+      objectReference: {fileID: 2800000, guid: 4168d69891da75743acc44f7a3e74d31, type: 3}
     - target: {fileID: 11443544, guid: 19eafe53a7aadc644bc46200d92edfcb, type: 2}
       propertyPath: m_AnimTextures.Array.data[23]
       value: 
-      objectReference: {fileID: 2800000, guid: ec906accd1c1f674c8bca654e89a2787, type: 3}
+      objectReference: {fileID: 2800000, guid: 22cc706705a25564896fe108a9c14220, type: 3}
     - target: {fileID: 11443544, guid: 19eafe53a7aadc644bc46200d92edfcb, type: 2}
       propertyPath: m_AnimTextures.Array.data[24]
       value: 
-      objectReference: {fileID: 2800000, guid: b8fb2bba8e53bb34199430e394879d66, type: 3}
+      objectReference: {fileID: 2800000, guid: 4bfa968487394a149a48ec61c2ce5752, type: 3}
     - target: {fileID: 11443544, guid: 19eafe53a7aadc644bc46200d92edfcb, type: 2}
       propertyPath: m_AnimTextures.Array.data[25]
       value: 
@@ -2126,11 +2174,11 @@ Prefab:
     - target: {fileID: 3386780, guid: 19eafe53a7aadc644bc46200d92edfcb, type: 2}
       propertyPath: m_Mesh
       value: 
-      objectReference: {fileID: 4300002, guid: 9ba769b11058ca0479eb5cff44591cb9, type: 3}
+      objectReference: {fileID: 4300004, guid: 9cdc71ad04d15514ca845f33ee26e8f4, type: 3}
     - target: {fileID: 6422212, guid: 19eafe53a7aadc644bc46200d92edfcb, type: 2}
       propertyPath: m_Mesh
       value: 
-      objectReference: {fileID: 4300002, guid: 9ba769b11058ca0479eb5cff44591cb9, type: 3}
+      objectReference: {fileID: 4300004, guid: 9cdc71ad04d15514ca845f33ee26e8f4, type: 3}
     - target: {fileID: 11419562, guid: 19eafe53a7aadc644bc46200d92edfcb, type: 2}
       propertyPath: m_SceneToLoad
       value: VR_GamesMenu
@@ -2141,15 +2189,39 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 464712, guid: 19eafe53a7aadc644bc46200d92edfcb, type: 2}
       propertyPath: m_LocalScale.x
-      value: 1
+      value: 3.93095
       objectReference: {fileID: 0}
     - target: {fileID: 464712, guid: 19eafe53a7aadc644bc46200d92edfcb, type: 2}
       propertyPath: m_LocalScale.y
-      value: 1
+      value: 2.854583
       objectReference: {fileID: 0}
     - target: {fileID: 464712, guid: 19eafe53a7aadc644bc46200d92edfcb, type: 2}
       propertyPath: m_LocalScale.z
+      value: 2.854583
+      objectReference: {fileID: 0}
+    - target: {fileID: 11401802, guid: 19eafe53a7aadc644bc46200d92edfcb, type: 2}
+      propertyPath: changeMaterial
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11401802, guid: 19eafe53a7aadc644bc46200d92edfcb, type: 2}
+      propertyPath: selectedMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 369496c6496763c47beab10f6b586248, type: 2}
+    - target: {fileID: 11401802, guid: 19eafe53a7aadc644bc46200d92edfcb, type: 2}
+      propertyPath: unselectedMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: e6c489be84a524546821e96ff36830c1, type: 2}
+    - target: {fileID: 11401802, guid: 19eafe53a7aadc644bc46200d92edfcb, type: 2}
+      propertyPath: renderer
+      value: 
+      objectReference: {fileID: 723967002}
+    - target: {fileID: 464712, guid: 19eafe53a7aadc644bc46200d92edfcb, type: 2}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 3.8460002
+      objectReference: {fileID: 0}
+    - target: {fileID: 11443544, guid: 19eafe53a7aadc644bc46200d92edfcb, type: 2}
+      propertyPath: m_FrameRate
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8257470, guid: 19eafe53a7aadc644bc46200d92edfcb, type: 2}
@@ -2169,7 +2241,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 412658, guid: 5c94e14eb82829e48986ce947fd5ad93, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -0.85999995
+      value: -1.19
       objectReference: {fileID: 0}
     - target: {fileID: 412658, guid: 5c94e14eb82829e48986ce947fd5ad93, type: 2}
       propertyPath: m_LocalPosition.z
@@ -2465,7 +2537,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 473928, guid: 40a3c2cb7308fdd49b8526fc1020e4eb, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -0.85999995
+      value: -1.19
       objectReference: {fileID: 0}
     - target: {fileID: 473928, guid: 40a3c2cb7308fdd49b8526fc1020e4eb, type: 2}
       propertyPath: m_LocalPosition.z
